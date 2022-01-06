@@ -15,13 +15,13 @@ export class User {
 
   @Column({ name: 'email', unique: true })
   @Index('IDX_USER_EMAIL')
-  email!: string;
+  email!: Email;
 
   @Column({ name: 'name' })
   name!: string;
 
   @Column({ name: 'auth0_id', type: 'uuid' })
-  auth0Id!: string;
+  auth0Id!: Uuid;
 
   @CreateDateColumn({ name: 'created_at', type: 'timestamp with time zone' })
   createdAt!: Date;

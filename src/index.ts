@@ -8,6 +8,7 @@ import { logger } from '$/common/logger';
 import { errorMiddleware } from '$/middleware/error.middleware';
 import { notFoundMiddleware } from '$/middleware/not-found.middleware';
 import { userMiddleware } from '$/middleware/user.middleware';
+import userController from '$/user/user.controller';
 import viewEngineController from '$/view-engine/view-engine.controller';
 
 dotenv.config();
@@ -42,7 +43,7 @@ app.use(auth(config));
 app.use(userMiddleware);
 
 // Controllers
-const routes = express.Router().use('/', viewEngineController);
+const routes = express.Router().use('/', viewEngineController).use('/api/v1', userController);
 app.use('/', routes);
 
 // Post controller middleware

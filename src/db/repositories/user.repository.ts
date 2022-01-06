@@ -2,6 +2,7 @@ import Boom from 'boom';
 import {
   AbstractRepository,
   DeepPartial,
+  DeleteResult,
   EntityManager,
   EntityRepository,
   SelectQueryBuilder,
@@ -20,18 +21,26 @@ export class UserRepository extends AbstractRepository<User> {
     return this.manager.createQueryBuilder(User, 'user');
   }
 
-  create(data: { attributes: DeepPartial<User> }): Promise<User> {
+  create(data: DeepPartial<User>): Promise<User> {
     const payload: QueryDeepPartialEntity<User> = {
-      ...data.attributes,
+      ...data,
     };
     return this.manager.save(User, payload as User);
   }
 
-  findByEmail(email: string): Promise<User | undefined> {
+  deleteByAuth0Id(auth0Id: Uuid): Promise<DeleteResult> {
+    return this.userQuery()
+      .clone()
+      .delete()
+      .where('"user"."auth0_id" = :auth0Id', { auth0Id })
+      .execute();
+  }
+
+  findByEmail(email: Email): Promise<User | undefined> {
     return this.userQuery().clone().where('"user"."email" = :email', { email }).getOne();
   }
 
-  async findByEmailOrFail(email: string): Promise<User> {
+  async findByEmailOrFail(email: Email): Promise<User> {
     const user = await this.findByEmail(email);
     if (!user) {
       throw Boom.notFound(`User with email ${email} does not exist`);
@@ -39,14 +48,14 @@ export class UserRepository extends AbstractRepository<User> {
     return user;
   }
 
-  findById(id: number): Promise<User | undefined> {
-    return this.userQuery().clone().where('"user"."id" = :id', { id }).getOne();
+  findByAuth0Id(auth0Id: Uuid): Promise<User | undefined> {
+    return this.userQuery().clone().where('"user"."auth0_id" = :auth0Id', { auth0Id }).getOne();
   }
 
-  async findByIdOrFail(id: number): Promise<User> {
-    const user = await this.findById(id);
+  async findByAuth0IdOrFail(auth0Id: Uuid): Promise<User> {
+    const user = await this.findByAuth0Id(auth0Id);
     if (!user) {
-      throw Boom.notFound(`User with id ${id} does not exist`);
+      throw Boom.notFound(`User with auth0 id: ${auth0Id} does not exist`);
     }
     return user;
   }

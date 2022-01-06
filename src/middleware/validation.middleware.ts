@@ -7,7 +7,6 @@ interface DtoValidator {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   dto: ClassType<any>;
   location: 'body' | 'params' | 'query';
-  message?: string;
 }
 
 /**
@@ -20,11 +19,7 @@ interface DtoValidator {
 export function validationMiddleware(dtoValidators: DtoValidator[]): RequestHandler {
   return async (req: Request, _: Response, next: NextFunction) => {
     let errors: ValidationError[] | undefined;
-    let message = 'Invalid input provided.';
     for (const dto of dtoValidators) {
-      if (dto.message) {
-        message = dto.message;
-      }
       try {
         const result = await validate(req, dto);
         if (dto.location === 'body' && Object.keys(result).length > 0) {
@@ -38,7 +33,7 @@ export function validationMiddleware(dtoValidators: DtoValidator[]): RequestHand
     if (!errors) {
       next();
     } else {
-      next(Boom.badRequest(message, formatValidationErrors(errors)));
+      next(Boom.badRequest('Invalid input provided.', formatValidationErrors(errors)));
     }
   };
 }
@@ -57,10 +52,7 @@ function validate(
   );
 }
 
-export function formatValidationErrors(
-  errors: ValidationError[],
-  details = {},
-): Record<string, unknown> {
+function formatValidationErrors(errors: ValidationError[], details = {}): Record<string, unknown> {
   if (errors.length > 0) {
     for (const error of errors) {
       details =
