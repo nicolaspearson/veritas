@@ -13,7 +13,7 @@ export class User {
   @PrimaryGeneratedColumn()
   id!: number;
 
-  @Column({ name: 'email', unique: true })
+  @Column({ name: 'email', type: 'varchar', unique: true })
   @Index('IDX_USER_EMAIL')
   email!: Email;
 

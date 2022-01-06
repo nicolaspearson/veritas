@@ -3,6 +3,7 @@ import express from 'express';
 import { ConfigParams, auth } from 'express-openid-connect';
 import * as http from 'http';
 import path from 'path';
+import 'reflect-metadata';
 
 import { logger } from '$/common/logger';
 import { errorMiddleware } from '$/middleware/error.middleware';

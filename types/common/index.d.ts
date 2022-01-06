@@ -3,3 +3,9 @@ type Opaque<K, T> = T & { type: K };
 
 type Email = Opaque<'Email', string>;
 type Uuid = Opaque<'Uuid', string>;
+
+declare namespace Express {
+  interface Request {
+    auth0Id?: Uuid;
+  }
+}
