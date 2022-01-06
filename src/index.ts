@@ -2,11 +2,13 @@ import dotenv from 'dotenv';
 import express from 'express';
 import { ConfigParams, auth } from 'express-openid-connect';
 import * as http from 'http';
-import createHttpError, { HttpError } from 'http-errors';
-import morgan from 'morgan';
 import path from 'path';
 
-import { router } from '$/routes';
+import { logger } from '$/common/logger';
+import { errorMiddleware } from '$/middleware/error.middleware';
+import { notFoundMiddleware } from '$/middleware/not-found.middleware';
+import { userMiddleware } from '$/middleware/user.middleware';
+import viewEngineController from '$/view-engine/view-engine.controller';
 
 dotenv.config();
 
@@ -15,7 +17,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(morgan('dev'));
+app.use(logger);
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
@@ -36,29 +38,16 @@ if (!config.baseURL && process.env.PORT && process.env.NODE_ENV !== 'production'
 
 app.use(auth(config));
 
-// Middleware to make the `user` object available to all views
-app.use((req: express.Request, res: express.Response, next: express.NextFunction) => {
-  res.locals.user = req.oidc.user;
-  next();
-});
+// Pre-controller middleware
+app.use(userMiddleware);
 
-app.use('/', router);
+// Controllers
+const routes = express.Router().use('/', viewEngineController);
+app.use('/', routes);
 
-// Catch 404's and forward them to the error handler
-app.use((_req: express.Request, _res: express.Response, next: express.NextFunction) => {
-  next(createHttpError(404, 'Not Found'));
-});
-
-// Error handler
-app.use(
-  (error: HttpError, _req: express.Request, res: express.Response, _: express.NextFunction) => {
-    res.status(error.status || 500);
-    res.render('error', {
-      message: error.message,
-      error: process.env.NODE_ENV !== 'production' ? error : {},
-    });
-  },
-);
+// Post controller middleware
+app.use(notFoundMiddleware);
+app.use(errorMiddleware);
 
 const server: http.Server = http.createServer(app);
 server.listen(port, () => {
