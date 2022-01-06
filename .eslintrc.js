@@ -99,6 +99,7 @@ module.exports = {
     'unicorn/no-useless-undefined': 'off',
     'unicorn/no-null': 'off',
     'unicorn/numeric-separators-style': 'off',
+    'unicorn/prefer-module': 'off',
     'unicorn/prefer-node-protocol': 'off',
     'unicorn/no-array-callback-reference': 'off',
     'unicorn/prevent-abbreviations': [
@@ -170,6 +171,7 @@ module.exports = {
         ],
         '@typescript-eslint/no-unsafe-assignment': 'warn',
         '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_+$' }],
         '@typescript-eslint/restrict-template-expressions': ['error', { allowAny: true }],
       },

@@ -16,7 +16,6 @@ package.json
 yarn.lock
 
 **/.esbuild/**
-**/build/**
 **/coverage/**
 **/dist/**
 **/node_modules/**
