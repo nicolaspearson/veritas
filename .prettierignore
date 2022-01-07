@@ -15,7 +15,6 @@ LICENSE
 package.json
 yarn.lock
 
-**/.esbuild/**
 **/coverage/**
 **/dist/**
 **/node_modules/**

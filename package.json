@@ -13,7 +13,8 @@
   },
   "main": "src/index.ts",
   "scripts": {
-    "build": "node esbuild.config.js && cp -r src/views dist/views",
+    "build": "rimraf dist && yarn copy:assets && webpack --config webpack.config.js",
+    "copy:assets": "mkdir -p dist && cp -r src/views dist/views",
     "db:logs": "yarn exec:docker-compose logs -f db",
     "db:start": "yarn exec:docker-compose up -d --renew-anon-volumes --force-recreate db",
     "db:stop": "docker-compose rm -f -s -v db",
@@ -32,7 +33,7 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "sdk": "yarn dlx @yarnpkg/sdks vscode",
-    "start:dev": "yarn db:start && nodemon src/index.ts",
+    "start:dev": "rimraf dist && yarn db:start && yarn copy:assets && webpack --config webpack-hmr.config.js --watch",
     "start": "node dist/index.js"
   },
   "dependencies": {
@@ -60,10 +61,9 @@
     "@types/http-errors": "^1.8.1",
     "@types/morgan": "^1.9.3",
     "@types/node": "^14.18.5",
+    "@types/webpack-env": "^1.16.3",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
-    "@yarnpkg/esbuild-plugin-pnp": "^2.0.0",
-    "esbuild": "^0.14.10",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -81,8 +81,14 @@
     "nodemon": "^2.0.15",
     "pinst": "^2.1.6",
     "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "run-script-webpack-plugin": "^0.0.11",
+    "ts-loader": "^9.2.6",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-pnp-externals": "^1.1.0"
   },
   "nodemonConfig": {
     "env": {

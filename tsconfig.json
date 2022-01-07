@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "composite": false,
     "declaration": true,
     "declarationMap": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "lib": ["ES2020"],
-    "module": "CommonJS",
+    "lib": ["es2020"],
+    "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "lf",
     "noImplicitAny": true,
@@ -15,13 +16,18 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "dist",
+    "paths": {
+      "$/*": ["./src/*"],
+      "#/*": ["./test/*"]
+    },
+    "preserveConstEnums": true,
     "pretty": true,
-    "rootDir": "src",
+    "rootDir": ".",
     "sourceMap": true,
     "strict": true,
-    "target": "ES2020",
-    "typeRoots": ["types"]
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es2020"
   },
   "include": ["src", "types"]
 }

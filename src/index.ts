@@ -6,6 +6,7 @@ import path from 'path';
 import 'reflect-metadata';
 
 import authController from '$/auth/auth.controller';
+import { Environment } from '$/common/enums/environment.enum';
 import { log, logger } from '$/common/logger';
 import * as db from '$/db';
 import { errorMiddleware } from '$/middleware/error.middleware';
@@ -13,6 +14,13 @@ import { notFoundMiddleware } from '$/middleware/not-found.middleware';
 import { userMiddleware } from '$/middleware/user.middleware';
 import userController from '$/user/user.controller';
 import viewEngineController from '$/view-engine/view-engine.controller';
+
+declare const module: {
+  hot: {
+    accept: () => void;
+    dispose: (callback: () => Promise<void>) => void;
+  };
+};
 
 dotenv.config();
 
@@ -37,7 +45,7 @@ const config: ConfigParams = {
 
 const host = process.env.API_HOST || 'localhost';
 const port = process.env.API_PORT || 3000;
-if (!config.baseURL && process.env.API_PORT && process.env.NODE_ENV !== 'production') {
+if (!config.baseURL && host && port) {
   config.baseURL = `http://${host}:${port}`;
 }
 
@@ -58,7 +66,17 @@ app.use('/', routes);
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
 
-const server: http.Server = http.createServer(app);
+function close(server: http.Server): Promise<boolean> {
+  return new Promise<boolean>((resolve, reject) => {
+    server.close((error) => {
+      if (error) {
+        reject(error);
+      }
+      log(`App: Server closed!`);
+      resolve(true);
+    });
+  });
+}
 
 void (async () => {
   try {
@@ -67,7 +85,16 @@ void (async () => {
     log(`Database: Error connecting!`);
     return error;
   }
+  const server: http.Server = http.createServer(app);
   server.listen(port, () => {
-    log(`Listening on ${config.baseURL!}`);
+    log(`App: Listening on ${config.baseURL!}`);
   });
+
+  // Hot module replacement with Webpack
+  if (process.env.NODE_ENV === Environment.Development && module.hot) {
+    module.hot.accept();
+    module.hot.dispose(async () => {
+      await close(server);
+    });
+  }
 })();

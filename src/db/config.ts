@@ -1,6 +1,7 @@
 import { ConnectionOptions } from 'typeorm';
 
 import { Environment } from '$/common/enums/environment.enum';
+import * as webpackConfig from '$/db/typeorm-webpack.config';
 
 export function configureConnectionOptions(): ConnectionOptions {
   const type = 'postgres';
@@ -18,6 +19,15 @@ export function configureConnectionOptions(): ConnectionOptions {
     entities: [process.env.TYPEORM_ENTITIES as string],
     migrations: [process.env.TYPEORM_MIGRATIONS as string],
   };
+
+  // This option should always be set to false in the integration tests.
+  if (process.env.TYPEORM_USE_WEBPACK === 'true') {
+    Object.assign(connectionOptions, {
+      entities: webpackConfig.entityFunctions(),
+      migrations: webpackConfig.migrationFunctions(),
+    } as ConnectionOptions);
+  }
+
   if (process.env.NODE_ENV === Environment.Production) {
     // Production options that will override anything 'unsafe'
     const productionOptions: ConnectionOptions = {

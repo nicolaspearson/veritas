@@ -14,8 +14,16 @@ interface Fixture {
 const fixtures: Fixture[] = [{ entity: User, values: userFixtures }];
 
 export async function seedDatabase(connection: Connection): Promise<void> {
-  for (const fixture of fixtures) {
-    const repository = connection.getRepository(fixture.entity);
-    await repository.save(fixture.values);
+  // Avoid seeding multiple times when webpack HMR is used
+  const user = await connection.manager
+    .createQueryBuilder(User, 'user')
+    .where({ id: userFixtures[0].id })
+    .getOne();
+  // If the user already exists we skip the seeding process
+  if (!user) {
+    for (const fixture of fixtures) {
+      const repository = connection.getRepository(fixture.entity);
+      await repository.save(fixture.values);
+    }
   }
 }
