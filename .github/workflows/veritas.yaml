@@ -1,0 +1,47 @@
+name: veritas
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/veritas.yaml
+      - package.json
+      - tsconfig.json
+      - src/**
+      - types/**/*.ts
+      - '!**.md'
+      - '!**/.gitignore'
+  pull_request:
+    paths:
+      - .github/workflows/veritas.yaml
+      - package.json
+      - tsconfig.json
+      - src/**
+      - types/**/*.ts
+      - '!**.md'
+      - '!**/.gitignore'
+  workflow_dispatch: null
+
+env:
+  PACKAGE: veritas
+jobs:
+  build:
+    name: Build & Lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14, 15, 16, 17]
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@master
+      - name: Using node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install yarn
+        run: yarn install --immutable
+      - name: Build package
+        run: yarn build
+      - name: Lint package
+        run: yarn lint
