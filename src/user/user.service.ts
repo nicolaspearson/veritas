@@ -1,7 +1,7 @@
 import Boom from 'boom';
 import { getCustomRepository } from 'typeorm';
-import * as uuid from 'uuid';
 
+import { Auth0Client } from '$/auth0/client';
 import { RegisterUserRequest } from '$/common/dto';
 import { log } from '$/common/logger';
 import { User } from '$/db/entities/user.entity';
@@ -10,12 +10,12 @@ import { UserRepository } from '$/db/repositories/user.repository';
 /**
  * Deletes a user's account from the database.
  *
- * @param auth0Id The auth0 {@link Uuid} of the user.
+ * @param auth0Id The {@link Auth0Id} of the user.
  *
  * @throws A NotFoundError if the authenticated user does not exist.
  * @throws An InternalServerError if the database transaction fails.
  */
-export async function deleteUserByAuth0Id(auth0Id: Uuid): Promise<void> {
+export async function deleteUserByAuth0Id(auth0Id: Auth0Id): Promise<void> {
   log(`Deleting user with auth0 id: ${auth0Id}`);
   const deleted = await getCustomRepository(UserRepository).deleteByAuth0Id(auth0Id);
   if (!deleted) {
@@ -27,13 +27,13 @@ export async function deleteUserByAuth0Id(auth0Id: Uuid): Promise<void> {
 /**
  * Retrieves a user's profile and consent events from the database.
  *
- * @param auth0Id The auth0 {@link Uuid} of the user.
+ * @param auth0Id The {@link Auth0Id} of the user.
  * @returns The {@link UserEvents} object.
  *
  * @throws A NotFoundError if the authenticated user does not exist.
  * @throws An InternalServerError if the database transaction fails.
  */
-export function findUserByAuth0Id(auth0Id: Uuid): Promise<User> {
+export function findUserByAuth0Id(auth0Id: Auth0Id): Promise<User> {
   log(`Finding user with id: ${auth0Id}`);
   return getCustomRepository(UserRepository).findByAuth0IdOrFail(auth0Id);
 }
@@ -54,9 +54,13 @@ export async function register(dto: RegisterUserRequest): Promise<User> {
     // This should be changed to avoid user enumeration attacks.
     throw Boom.conflict('User is already registered.');
   }
-  // TODO: We might need to encrypt the password
-  // const hashedPassword = await encryptPassword(dto.password);
-
-  // TODO: Create user in auth0
-  return getCustomRepository(UserRepository).create({ ...dto, auth0Id: uuid.v4() as Uuid });
+  let auth0Id = await Auth0Client.getInstance().userGetByEmail(dto.email);
+  if (!auth0Id) {
+    // Create the user in auth0
+    auth0Id = await Auth0Client.getInstance().userRegistration(dto);
+  }
+  // These two statements should be wrapped in a transaction, to allow for rollbacks.
+  // Alternatively we should determine if the user already exist in auth0, and
+  // only retrieve the user's auth0Id instead of using a transaction.
+  return getCustomRepository(UserRepository).create({ ...dto, auth0Id });
 }

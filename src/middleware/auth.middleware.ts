@@ -5,7 +5,7 @@ export function authMiddleware(req: Request, _: Response, next: NextFunction): v
   if (!req.oidc.isAuthenticated()) {
     throw Boom.unauthorized('Not authenticated.');
   }
-  const payload = req.oidc.user as { id: Uuid };
+  const payload = req.oidc.user as { id: Auth0Id };
   req.auth0Id = payload.id;
   next();
 }

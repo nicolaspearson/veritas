@@ -1,7 +1,7 @@
 export class BaseUserResponse {
-  readonly id: number;
+  readonly id: Uuid;
 
-  constructor(data: { id: number }) {
+  constructor(data: { id: Uuid }) {
     this.id = data.id;
   }
 }

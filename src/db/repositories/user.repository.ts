@@ -28,7 +28,7 @@ export class UserRepository extends AbstractRepository<User> {
     return this.manager.save(User, payload as User);
   }
 
-  deleteByAuth0Id(auth0Id: Uuid): Promise<DeleteResult> {
+  deleteByAuth0Id(auth0Id: Auth0Id): Promise<DeleteResult> {
     return this.userQuery()
       .clone()
       .delete()
@@ -48,11 +48,11 @@ export class UserRepository extends AbstractRepository<User> {
     return user;
   }
 
-  findByAuth0Id(auth0Id: Uuid): Promise<User | undefined> {
+  findByAuth0Id(auth0Id: Auth0Id): Promise<User | undefined> {
     return this.userQuery().clone().where('"user"."auth0_id" = :auth0Id', { auth0Id }).getOne();
   }
 
-  async findByAuth0IdOrFail(auth0Id: Uuid): Promise<User> {
+  async findByAuth0IdOrFail(auth0Id: Auth0Id): Promise<User> {
     const user = await this.findByAuth0Id(auth0Id);
     if (!user) {
       throw Boom.notFound(`User with auth0 id: ${auth0Id} does not exist`);

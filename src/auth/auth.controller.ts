@@ -16,7 +16,7 @@ import { requestHandler } from '$/utils/express.utils';
  */
 async function postLogin(req: express.Request, res: express.Response): Promise<void> {
   const dto = req.body as LoginRequest;
-  const token = await login(dto);
+  const token = await login(dto, req.ip);
   log(`Logged in user with email: ${dto.email} at: ${new Date().toISOString()}`);
   res.status(201).json(new JwtResponse({ token }));
 }
