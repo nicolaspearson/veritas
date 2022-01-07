@@ -47,7 +47,7 @@ async function getAuthenticatedUser(req: express.Request, res: express.Response)
  * @param req The http request.
  * @param res The http response.
  */
-async function postRegistration(req: express.Request, res: express.Response): Promise<void> {
+async function postRegister(req: express.Request, res: express.Response): Promise<void> {
   const dto = req.body as RegisterUserRequest;
   const user = await register(dto);
   const userId = user.id;
@@ -63,5 +63,5 @@ export default express
   .post(
     '/users/registration',
     validationMiddleware([{ dto: RegisterUserRequest, location: 'body' }]),
-    requestHandler(postRegistration),
+    requestHandler(postRegister),
   );

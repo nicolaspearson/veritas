@@ -2,6 +2,7 @@ import Boom from 'boom';
 import { NextFunction, Request, Response } from 'express';
 
 import { BaseError } from '$/common/errors/base.error';
+import { log } from '$/common/logger';
 
 export function errorMiddleware(
   error: BaseError,
@@ -9,7 +10,7 @@ export function errorMiddleware(
   res: Response,
   _: NextFunction,
 ): void {
-  console.log(JSON.stringify(error));
+  log(JSON.stringify(error));
   let statusCode = error.status || 500;
   const message = error.message || 'Internal Server Error';
   if (error && error.output && error.output.statusCode) {

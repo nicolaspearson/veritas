@@ -2,11 +2,9 @@ import { ConnectionOptions } from 'typeorm';
 
 import { Environment } from '$/common/enums/environment.enum';
 
-const type = 'postgres';
-export function configureConnectionOptions(
-  connectionOptions: ConnectionOptions,
-): ConnectionOptions {
-  Object.assign(connectionOptions, {
+export function configureConnectionOptions(): ConnectionOptions {
+  const type = 'postgres';
+  const connectionOptions: ConnectionOptions = {
     type,
     host: process.env.TYPEORM_HOST,
     port: Number(process.env.TYPEORM_PORT),
@@ -15,11 +13,11 @@ export function configureConnectionOptions(
     password: process.env.TYPEORM_PASSWORD,
     database: process.env.TYPEORM_DATABASE,
     schema: process.env.TYPEORM_SCHEMA,
-    synchronize: false,
-    dropSchema: false,
+    synchronize: process.env.TYPEORM_SYNCHRONIZE === 'true',
+    dropSchema: process.env.TYPEORM_DROP_SCHEMA === 'true',
     entities: [process.env.TYPEORM_ENTITIES as string],
     migrations: [process.env.TYPEORM_MIGRATIONS as string],
-  });
+  };
   if (process.env.NODE_ENV === Environment.Production) {
     // Production options that will override anything 'unsafe'
     const productionOptions: ConnectionOptions = {

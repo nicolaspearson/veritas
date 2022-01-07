@@ -1,6 +1,43 @@
-@baseUrl = http://localhost:3000
+@baseUrl = http://localhost:3000/api/v1
+@token = empty
 
-### Test
-GET {{baseUrl}} HTTP/1.1
+########################################################################
+###########                       AUTH                       ###########
+########################################################################
+
+### Authenticates a user
+POST {{baseUrl}}/auth/login HTTP/1.1
 Accept: application/json
 Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "password": "myS3cretP@55w0rd!"
+}
+
+########################################################################
+###########                       USER                       ###########
+########################################################################
+
+### Get the authenticated user's profile
+GET {{baseUrl}}/user HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Delete the authenticated user's account
+DELETE {{baseUrl}}/user HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Register a new user
+POST {{baseUrl}}/users/registration HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "password": "myS3cretP@55w0rd!",
+  "name": "John Doe"
+}

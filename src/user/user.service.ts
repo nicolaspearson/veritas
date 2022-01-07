@@ -44,14 +44,15 @@ export function findUserByAuth0Id(auth0Id: Uuid): Promise<User> {
  * @param dto The {@link RegisterUserRequest} object.
  * @returns The created {@link User} object.
  *
- * @throws A BadRequestError if the user already exists.
+ * @throws A ConflictError if the user already exists.
  * @throws An InternalServerError if the database transaction fails.
  */
 export async function register(dto: RegisterUserRequest): Promise<User> {
   log(`Registering user with email: ${dto.email}`);
   const user = await getCustomRepository(UserRepository).findByEmail(dto.email);
   if (user) {
-    throw Boom.badData('Invalid email address or password provided.');
+    // This should be changed to avoid user enumeration attacks.
+    throw Boom.conflict('User is already registered.');
   }
   // TODO: We might need to encrypt the password
   // const hashedPassword = await encryptPassword(dto.password);
