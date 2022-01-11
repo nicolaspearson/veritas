@@ -10,7 +10,17 @@ This is an `auth0` experimental project.
 - [ ] User account linking
 - [ ] SAML sign-in
 
+### Username & Password
+
+Traditional username and password authentication flow.
+
+### Social Connect
+
+Allow registration and sign-in via a `Social Network` platform, e.g. Google, Facebook, etc.
+
 ### SAML
+
+Allow registration and sign-in via a configured SAML flow.
 
 SAML sign-in requirements:
 
