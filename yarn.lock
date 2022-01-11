@@ -595,7 +595,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.7":
+"@types/node@npm:^16.11.19":
   version: 16.11.19
   resolution: "@types/node@npm:16.11.19"
   checksum: a9ba0cd1e61c8ad50f3fc9c2b37b795bf0286dacb39dcc985da90328abf0c5151dffe9932d20bc9a6a52c3ce7bfc1e5a7c2dc1416480fb84f1c2d70e25caeba0
@@ -6197,7 +6197,7 @@ __metadata:
     "@types/express": ^4.17.13
     "@types/http-errors": ^1.8.1
     "@types/morgan": ^1.9.3
-    "@types/node": ^16.11.7
+    "@types/node": ^16.11.19
     "@types/webpack-env": ^1.16.3
     "@typescript-eslint/eslint-plugin": ^5.9.1
     "@typescript-eslint/parser": ^5.9.1
