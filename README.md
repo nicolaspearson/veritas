@@ -9,6 +9,10 @@ This is an `auth0` experimental project.
 - [x] Social connect sign-in
 - [ ] User account linking
 - [ ] SAML sign-in
+- [ ] WS-Fed sign-in
+- [ ] Auth [Middleware](https://www.npmjs.com/package/express-oauth2-jwt-bearer)
+- [ ] Scope Middleware (See above) -> This should also be considered in the roles and permissions
+- [ ] Terraform configuration
 
 ### Username & Password
 
@@ -41,3 +45,5 @@ of users to be reflected in internal roles and permissions.
 - Determine what Auth0 can store, and how would we extend our Auth0 to access other Okta or Auth0
   instances of external companies. Can this be solved with OIDC?
 - How tightly coupled should the solution be with Auth0?
+
+- Configure Auth0 using terraform.

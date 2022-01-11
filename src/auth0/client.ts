@@ -7,7 +7,7 @@ import Boom from 'boom';
 import { LoginRequest, RegisterUserRequest } from '$/common/dto';
 import { log } from '$/common/logger';
 
-type Options = {
+type Auth0Options = {
   audience: string;
   clientId: string;
   clientSecret: string;
@@ -24,23 +24,16 @@ export class Auth0Client {
   private static instance: Auth0Client;
   private managementClient: ManagementClient;
 
-  private clientOptions: Options;
-  private m2mOptions: Options;
+  private auth0M2MOptions: Auth0Options;
 
   constructor() {
-    this.clientOptions = {
-      audience: `https://${process.env.AUTH0_DOMAIN!}/api/v2/`,
-      clientId: process.env.AUTH0_CLIENT_ID!,
-      clientSecret: process.env.AUTH0_CLIENT_SECRET!,
-      domain: process.env.AUTH0_DOMAIN!,
-    };
-    this.m2mOptions = {
-      audience: `https://${process.env.AUTH0_M2M_DOMAIN!}/api/v2/`,
+    this.auth0M2MOptions = {
+      audience: process.env.AUTH0_M2M_AUDIENCE!,
       clientId: process.env.AUTH0_M2M_CLIENT_ID!,
       clientSecret: process.env.AUTH0_M2M_CLIENT_SECRET!,
       domain: process.env.AUTH0_M2M_DOMAIN!,
     };
-    this.managementClient = this.createManagementClient(this.m2mOptions);
+    this.managementClient = this.createManagementClient(this.auth0M2MOptions);
   }
 
   static getInstance(): Auth0Client {
@@ -55,7 +48,7 @@ export class Auth0Client {
    *
    * https://auth0.com/docs/secure/tokens/access-tokens/management-api-access-tokens
    */
-  private createManagementClient(options: Options): ManagementClient {
+  private createManagementClient(options: Auth0Options): ManagementClient {
     return new ManagementClient({
       ...options,
       scope: 'read:users create:users',
@@ -76,14 +69,14 @@ export class Auth0Client {
   async userSignIn(dto: LoginRequest, ipAddress: string): Promise<string> {
     try {
       const response: { data: TokenResponse } = await axios.post(
-        `https://${this.clientOptions.domain}/oauth/token`,
+        `https://${this.auth0M2MOptions.domain}/oauth/token`,
         {
           username: dto.email,
           password: dto.password,
           grant_type: 'password',
-          client_id: this.clientOptions.clientId,
-          client_secret: this.clientOptions.clientSecret,
-          audience: this.clientOptions.audience,
+          audience: this.auth0M2MOptions.audience,
+          client_id: this.auth0M2MOptions.clientId,
+          client_secret: this.auth0M2MOptions.clientSecret,
         },
         {
           headers: {
