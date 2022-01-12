@@ -10,20 +10,14 @@ import {
 
 import { Member } from './member.entity';
 
-@Entity({ name: 'user' })
-export class User {
+@Entity({ name: 'organization' })
+export class Organization {
   @PrimaryGeneratedColumn('uuid')
   id!: Uuid;
 
-  @Column({ name: 'email', type: 'varchar', unique: true })
-  @Index('IDX_USER_EMAIL')
-  email!: Email;
-
-  @Column({ name: 'name' })
+  @Column({ name: 'name', type: 'varchar', unique: true })
+  @Index('IDX_ORGANIZATION_NAME')
   name!: string;
-
-  @Column({ name: 'auth0_id', type: 'varchar' })
-  auth0Id!: Auth0Id;
 
   @CreateDateColumn({ name: 'created_at', type: 'timestamp with time zone' })
   createdAt!: Date;
@@ -31,6 +25,6 @@ export class User {
   @UpdateDateColumn({ name: 'updated_at', type: 'timestamp with time zone' })
   updatedAt!: Date;
 
-  @OneToMany(() => Member, (member) => member.user)
+  @OneToMany(() => Member, (member) => member.organization)
   memberships!: Member[];
 }

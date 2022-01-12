@@ -47,3 +47,5 @@ of users to be reflected in internal roles and permissions.
 - How tightly coupled should the solution be with Auth0?
 
 - Configure Auth0 using terraform.
+
+- Create admin panel using [Retool](https://retool.com/)
