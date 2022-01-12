@@ -30,3 +30,9 @@ This guide provides steps for configuring terraform.
    ```
 
 > [Reference](https://registry.terraform.io/providers/alexkappa/auth0/latest/docs/resources/client)
+
+## TODO
+
+- [Create client resources](https://registry.terraform.io/providers/alexkappa/auth0/latest/docs/resources/client)
+- [Create connection resources](https://registry.terraform.io/providers/alexkappa/auth0/latest/docs/resources/connection)
+- Remove unused resources and configurations.
