@@ -15,6 +15,16 @@ Content-Type: application/json
   "password": "myS3cretP@55w0rd!"
 }
 
+### Authenticates a user (Personal account)
+POST {{baseUrl}}/auth/login HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "nic.s.pearson@gmail.com",
+  "password": "!Test1234!"
+}
+
 ########################################################################
 ###########                       USER                       ###########
 ########################################################################
