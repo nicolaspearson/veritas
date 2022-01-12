@@ -5,6 +5,43 @@ networks:
     driver: bridge
 
 services:
+  #########################
+  ##      Backend        ##
+  #########################
+
+  veritas:
+    image: veritas:latest
+    build:
+      args:
+        PACKAGE: veritas
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=3000
+      - ENVIRONMENT=production
+      - NODE_ENV=production
+      - TYPEORM_DATABASE=veritas
+      - TYPEORM_HOST=db
+      - TYPEORM_PASSWORD=masterkey
+      - TYPEORM_PORT=5432
+      - TYPEORM_SCHEMA=veritas
+      - TYPEORM_USERNAME=veritas
+    ports:
+      - 3000:3000
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - development
+    container_name: veritas
+
+  #########################
+  ##     Persistence     ##
+  #########################
+
   db:
     image: postgres:14-alpine
     environment:

@@ -16,10 +16,15 @@ module.exports = {
     'plugin:unicorn/recommended',
     'prettier',
   ],
-  parserOptions: {
-    project: ['./tsconfig.eslint.json', './tsconfig.json'],
-    tsconfigRootDir: __dirname,
-  },
+  overrides: [
+    {
+      files: ['*.ts'],
+      parserOptions: {
+        project: ['./tsconfig.eslint.json', './tsconfig.json'],
+        tsconfigRootDir: __dirname,
+      },
+    },
+  ],
   plugins: [
     '@typescript-eslint',
     'eslint-comments',
