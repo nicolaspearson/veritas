@@ -2633,6 +2633,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"express-oauth2-jwt-bearer@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "express-oauth2-jwt-bearer@npm:1.1.0"
+  dependencies:
+    jose: ^4.3.7
+  checksum: af81c9b83cc54b880f761ac467b437c867b6cc7624ca517e7cad2ffa2c7a82b95b3ad67c86dc06e8c9029b39f1674e60b273354d1942cc26a1bd3f06383af2d9
+  languageName: node
+  linkType: hard
+
 "express-openid-connect@npm:^2.5.2":
   version: 2.5.2
   resolution: "express-openid-connect@npm:2.5.2"
@@ -3641,6 +3650,13 @@ __metadata:
   dependencies:
     "@panva/asn1.js": ^1.0.0
   checksum: 80a3447b51f794f8f2c7e21395dd880b55d374a055564595c69ff17722fb07aeb2dff722b5da9030651f67fafc7494e9ec5f5b56f5e1836d1ac94e604e6096ea
+  languageName: node
+  linkType: hard
+
+"jose@npm:^4.3.7":
+  version: 4.3.8
+  resolution: "jose@npm:4.3.8"
+  checksum: deba6643f3584c22cf62de4a2d338633f61073ceb9af4d19a706019eb0e75ad2107077ed38563ebf4d599866bd754342d8613d2b563afc4aa26774e74bd6621a
   languageName: node
   linkType: hard
 
@@ -6221,6 +6237,7 @@ __metadata:
     eslint-plugin-promise: ^6.0.0
     eslint-plugin-unicorn: ^40.0.0
     express: ^4.17.2
+    express-oauth2-jwt-bearer: ^1.1.0
     express-openid-connect: ^2.5.2
     husky: ^7.0.4
     markdownlint-cli: ^0.30.0

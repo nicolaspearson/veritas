@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import express from 'express';
+import { auth as jwtAuth } from 'express-oauth2-jwt-bearer';
 import { ConfigParams, auth } from 'express-openid-connect';
 import * as http from 'http';
 import path from 'path';
@@ -33,6 +34,14 @@ app.use(logger);
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
+
+// Used in the auth middleware. On protected routes the JWT Access
+// Token must exist and be verified against the Auth0 JSON Web Key Set.
+export const checkJwt = jwtAuth({
+  jwksUri: `https://${process.env.AUTH0_DOMAIN!}/.well-known/jwks.json`,
+  issuer: `https://${process.env.AUTH0_DOMAIN!}/`,
+  audience: `https://${process.env.AUTH0_DOMAIN!}/api/v2/`,
+});
 
 const config: ConfigParams = {
   authRequired: false,

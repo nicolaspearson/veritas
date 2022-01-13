@@ -16,6 +16,7 @@ dist
 
 # Yarn (https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored)
 .yarn/*
+!.yarn/**/*.zip
 !.yarn/cache
 !.yarn/patches
 !.yarn/plugins

@@ -10,7 +10,7 @@ This is an `auth0` experimental project.
 - [ ] User account linking
 - [ ] SAML sign-in
 - [ ] WS-Fed sign-in
-- [ ] Terraform configuration
+- [x] Terraform configuration
 
 ## Getting Started
 
@@ -144,16 +144,12 @@ of users to be reflected in internal roles and permissions.
 
 - Create DB schema for organizations, users (members), and roles and permissions.
 
-#### TODO
+## TODO
 
-- [ ] Auth [Middleware](https://www.npmjs.com/package/express-oauth2-jwt-bearer)
-- [ ] Scope Middleware (See above) -> This should also be considered in the roles and permissions
-
-- Create various user flows
 - Allow account linking when their are multiple accounts using the same email address.
+
 - Determine what Auth0 can store, and how would we extend our Auth0 to access other Okta or Auth0
   instances of external companies. Can this be solved with OIDC?
-- How tightly coupled should the solution be with Auth0?
 
 - Create `auth0` actions
 

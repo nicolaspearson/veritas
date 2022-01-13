@@ -67,6 +67,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-promise", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:6.0.0"],
             ["eslint-plugin-unicorn", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:40.0.0"],
             ["express", "npm:4.17.2"],
+            ["express-oauth2-jwt-bearer", "npm:1.1.0"],
             ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.5.2"],
             ["husky", "npm:7.0.4"],
             ["markdownlint-cli", "npm:0.30.0"],
@@ -3466,6 +3467,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["express-oauth2-jwt-bearer", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/express-oauth2-jwt-bearer-npm-1.1.0-975fa0060d-af81c9b83c.zip/node_modules/express-oauth2-jwt-bearer/",
+          "packageDependencies": [
+            ["express-oauth2-jwt-bearer", "npm:1.1.0"],
+            ["jose", "npm:4.3.8"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["express-openid-connect", [
         ["npm:2.5.2", {
           "packageLocation": "./.yarn/cache/express-openid-connect-npm-2.5.2-a685c52a70-0ec572cae9.zip/node_modules/express-openid-connect/",
@@ -4595,6 +4606,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["jose", "npm:2.0.5"],
             ["@panva/asn1.js", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.3.8", {
+          "packageLocation": "./.yarn/cache/jose-npm-4.3.8-7a2e38e2ca-deba6643f3.zip/node_modules/jose/",
+          "packageDependencies": [
+            ["jose", "npm:4.3.8"]
           ],
           "linkType": "HARD",
         }]
@@ -7630,6 +7648,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-promise", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:6.0.0"],
             ["eslint-plugin-unicorn", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:40.0.0"],
             ["express", "npm:4.17.2"],
+            ["express-oauth2-jwt-bearer", "npm:1.1.0"],
             ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.5.2"],
             ["husky", "npm:7.0.4"],
             ["markdownlint-cli", "npm:0.30.0"],
