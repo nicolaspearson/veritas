@@ -1,84 +1,76 @@
 resource "auth0_client" "terraform-veritas" {
-  name            = "Terraform Veritas"
-  description     = "App for running a Dockerized version of Veritas via Terraform"
-  app_type        = "regular_web"
-  callbacks       = ["http://localhost:3000/callback"]
+  name = "Terraform Veritas"
+  description = "The Veritas SPA (Managed by Terraform)"
+  app_type = "spa"
+  token_endpoint_auth_method = "client_secret_basic"
+  is_token_endpoint_ip_header_trusted = false
+  callbacks = ["http://localhost:3000/callback"]
+  allowed_logout_urls = ["http://localhost:3000"]
   oidc_conformant = true
   is_first_party  = true
+  grant_types = ["authorization_code", "client_credentials", "implicit", "refresh_token"]
   jwt_configuration {
     alg = "RS256"
   }
 }
 
+resource "auth0_client" "terraform-veritas-m2m" {
+  name = "Terraform Veritas M2M"
+  description = "The Veritas Machine To Machine Application (Managed by Terraform)"
+  app_type = "non_interactive"
+  token_endpoint_auth_method = "client_secret_post"
+  is_token_endpoint_ip_header_trusted = true
+  oidc_conformant = true
+  is_first_party  = true
+  grant_types = ["client_credentials", "password"]
+  jwt_configuration {
+    alg = "RS256"
+  }
+}
+
+resource "auth0_client_grant" "terraform-m2m-client-grant" {
+  client_id = "${auth0_client.terraform-veritas-m2m.id}"
+  audience = "https://${var.auth0_domain}/api/v2/"
+  scope = [
+    "read:client_grants",
+    "create:client_grants",
+    "delete:client_grants",
+    "update:client_grants",
+    "read:users",
+    "update:users",
+    "delete:users",
+    "create:users",
+    "read:users_app_metadata",
+    "update:users_app_metadata",
+    "delete:users_app_metadata",
+    "create:users_app_metadata"
+  ]
+}
+
 resource "auth0_connection" "terraform-veritas-db" {
-  name     = "terraform-veritas-db"
+  name = "terraform-veritas-db"
+  is_domain_connection = true
   strategy = "auth0"
   options {
     password_policy        = "good"
     brute_force_protection = true
   }
-  enabled_clients = [auth0_client.terraform-veritas.id, var.auth0_client_id]
+  enabled_clients = [
+    auth0_client.terraform-veritas.id,
+    auth0_client.terraform-veritas-m2m.id,
+    var.auth0_client_id
+  ]
 }
 
-resource "auth0_user" "terraform-veritas-admin-user" {
-  connection_name = auth0_connection.terraform-veritas-db.name
-  user_id         = "12345"
-  email           = "admin@veritas.com"
-  email_verified  = true
-  password        = var.auth0_admin_user_password
-  roles           = [auth0_role.terraform-veritas-admin-role.id]
-}
-
-resource "auth0_resource_server" "terraform-veritas-resource-server" {
-  name                                            = "Terraform Auth0 Resource Server"
-  identifier                                      = var.terraform-veritas-api-identifier
-  skip_consent_for_verifiable_first_party_clients = true
-  token_dialect                                   = "access_token_authz"
-  enforce_policies                                = true
-
-  scopes {
-    value       = "create:note"
-    description = "Only administrators can create notes"
+resource "auth0_connection" "terraform-veritas-google-oauth2" {
+  name = "terraform-veritas-google-oauth2"
+  strategy = "google-oauth2"
+  options {
+    scopes = [ "email", "profile" ]
+    set_user_root_attributes = "on_each_login"
   }
-
-  scopes {
-    value       = "read:note:self"
-    description = "Read Own Notes"
-  }
-
-  scopes {
-    value       = "read:note:all"
-    description = "Administrators can read all notes"
-  }
-}
-
-resource "auth0_role" "terraform-veritas-admin-role" {
-  name        = "admin"
-  description = "administrator"
-  permissions {
-    resource_server_identifier = auth0_resource_server.terraform-veritas-resource-server.identifier
-    name                       = "create:note"
-  }
-
-  permissions {
-    resource_server_identifier = auth0_resource_server.terraform-veritas-resource-server.identifier
-    name                       = "read:note:all"
-  }
-}
-
-resource "auth0_role" "terraform-veritas-basic-user-role" {
-  name        = "basic_user"
-  description = "Basic User"
-  permissions {
-    resource_server_identifier = auth0_resource_server.terraform-veritas-resource-server.identifier
-    name                       = "read:note:self"
-  }
-}
-
-resource "auth0_rule" "terraform-veritas-basic_user-rule" {
-  name = "basic-user-role-assignment"
-  script = templatefile("${path.module}/basic-user-rule.js", {
-    TERRAFORM_ROLE_ID : auth0_role.terraform-veritas-basic-user-role.id
-  })
-  enabled = true
+  enabled_clients = [
+    auth0_client.terraform-veritas.id,
+    var.auth0_client_id
+  ]
 }

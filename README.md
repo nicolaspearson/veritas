@@ -10,6 +10,21 @@ This is an `auth0` experimental project.
 - [ ] User account linking
 - [ ] SAML sign-in
 - [ ] WS-Fed sign-in
+- [ ] Terraform configuration
+
+## Getting Started
+
+In order to use this project the following tools are required:
+
+- [Docker](https://www.docker.com/products/docker-desktop)
+- [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+- [Yarn](https://yarnpkg.com/getting-started/install)
+
+1. Follow the instructions in the [Terraform README](./terraform/README.md) to configure the `auth0`
+   infrastructure.
+2. Start the application: `yarn start:dev`
+3. Navigate to `http://localhost:3000` in a browser OR use the `veritas.http` file to execute REST
+   calls directly to the API.
 
 ## Flows
 
@@ -133,7 +148,6 @@ of users to be reflected in internal roles and permissions.
 
 - [ ] Auth [Middleware](https://www.npmjs.com/package/express-oauth2-jwt-bearer)
 - [ ] Scope Middleware (See above) -> This should also be considered in the roles and permissions
-- [ ] Terraform configuration
 
 - Create various user flows
 - Allow account linking when their are multiple accounts using the same email address.
@@ -141,7 +155,7 @@ of users to be reflected in internal roles and permissions.
   instances of external companies. Can this be solved with OIDC?
 - How tightly coupled should the solution be with Auth0?
 
-- Configure Auth0 using terraform.
+- Create `auth0` actions
 
 - Create admin panel using [Retool](https://retool.com/)
 

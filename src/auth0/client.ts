@@ -24,16 +24,16 @@ export class Auth0Client {
   private static instance: Auth0Client;
   private managementClient: ManagementClient;
 
-  private auth0M2MOptions: Auth0Options;
+  private auth0Options: Auth0Options;
 
   constructor() {
-    this.auth0M2MOptions = {
-      audience: process.env.AUTH0_M2M_AUDIENCE!,
+    this.auth0Options = {
+      audience: `https://${process.env.AUTH0_DOMAIN!}/api/v2/`,
       clientId: process.env.AUTH0_M2M_CLIENT_ID!,
       clientSecret: process.env.AUTH0_M2M_CLIENT_SECRET!,
-      domain: process.env.AUTH0_M2M_DOMAIN!,
+      domain: process.env.AUTH0_DOMAIN!,
     };
-    this.managementClient = this.createManagementClient(this.auth0M2MOptions);
+    this.managementClient = this.createManagementClient(this.auth0Options);
   }
 
   static getInstance(): Auth0Client {
@@ -69,14 +69,14 @@ export class Auth0Client {
   async userSignIn(dto: LoginRequest, ipAddress: string): Promise<string> {
     try {
       const response: { data: TokenResponse } = await axios.post(
-        `https://${this.auth0M2MOptions.domain}/oauth/token`,
+        `https://${this.auth0Options.domain}/oauth/token`,
         {
           username: dto.email,
           password: dto.password,
           grant_type: 'password',
-          audience: this.auth0M2MOptions.audience,
-          client_id: this.auth0M2MOptions.clientId,
-          client_secret: this.auth0M2MOptions.clientSecret,
+          audience: this.auth0Options.audience,
+          client_id: this.auth0Options.clientId,
+          client_secret: this.auth0Options.clientSecret,
         },
         {
           headers: {
@@ -89,10 +89,12 @@ export class Auth0Client {
       }
     } catch (error) {
       const axiosError = error as AxiosError;
-      if (axiosError.isAxiosError)
+      if (axiosError.isAxiosError) {
         // This could contain sensitive information and should
         // be changed to avoid exposing such information.
         log(axiosError.toJSON());
+        log(axiosError.response?.data);
+      }
     }
     throw Boom.unauthorized('Invalid email address or password provided.');
   }
@@ -106,7 +108,7 @@ export class Auth0Client {
    */
   async userRegistration(dto: RegisterUserRequest): Promise<Auth0Id> {
     const user = await this.managementClient.createUser({
-      connection: 'Username-Password-Authentication',
+      connection: 'terraform-veritas-db',
       email: dto.email,
       username: undefined,
       email_verified: false,
