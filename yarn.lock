@@ -535,10 +535,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/http-errors@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@types/http-errors@npm:1.8.1"
-  checksum: f0710ea284a7eb5584c5e324b1dc810bc971e1adc94deff63a0c434a8a75adc020487e3e6d511cd82cef101bbcf090b8f56995c143d123e0c374dc0f61be3a61
+"@types/http-errors@npm:^1.8.2":
+  version: 1.8.2
+  resolution: "@types/http-errors@npm:1.8.2"
+  checksum: ecc365eea98d7eca650d593e742571acc3003742f0dd0fbbb15b8fce286e0f7421644b4140fb9bf701bbb7f1b744aea3967ebe025f0f0811aa5ab2c3d40fe111
   languageName: node
   linkType: hard
 
@@ -6211,7 +6211,7 @@ __metadata:
     "@types/auth0": ^2.34.10
     "@types/boom": ^7.3.1
     "@types/express": ^4.17.13
-    "@types/http-errors": ^1.8.1
+    "@types/http-errors": ^1.8.2
     "@types/morgan": ^1.9.3
     "@types/node": ^16.11.19
     "@types/webpack-env": ^1.16.3
