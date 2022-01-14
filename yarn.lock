@@ -535,13 +535,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/http-errors@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@types/http-errors@npm:1.8.1"
-  checksum: f0710ea284a7eb5584c5e324b1dc810bc971e1adc94deff63a0c434a8a75adc020487e3e6d511cd82cef101bbcf090b8f56995c143d123e0c374dc0f61be3a61
-  languageName: node
-  linkType: hard
-
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.8, @types/json-schema@npm:^7.0.9":
   version: 7.0.9
   resolution: "@types/json-schema@npm:7.0.9"
@@ -6211,7 +6204,6 @@ __metadata:
     "@types/auth0": ^2.34.10
     "@types/boom": ^7.3.1
     "@types/express": ^4.17.13
-    "@types/http-errors": ^1.8.1
     "@types/morgan": ^1.9.3
     "@types/node": ^16.11.19
     "@types/webpack-env": ^1.16.3

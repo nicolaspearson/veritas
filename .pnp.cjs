@@ -41,7 +41,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/auth0", "npm:2.34.10"],
             ["@types/boom", "npm:7.3.1"],
             ["@types/express", "npm:4.17.13"],
-            ["@types/http-errors", "npm:1.8.1"],
             ["@types/morgan", "npm:1.9.3"],
             ["@types/node", "npm:16.11.19"],
             ["@types/webpack-env", "npm:1.16.3"],
@@ -696,15 +695,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-http-cache-semantics-npm-4.0.1-90863c7a3e-1048aacf62.zip/node_modules/@types/http-cache-semantics/",
           "packageDependencies": [
             ["@types/http-cache-semantics", "npm:4.0.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["@types/http-errors", [
-        ["npm:1.8.1", {
-          "packageLocation": "./.yarn/cache/@types-http-errors-npm-1.8.1-03bdc8b2cb-f0710ea284.zip/node_modules/@types/http-errors/",
-          "packageDependencies": [
-            ["@types/http-errors", "npm:1.8.1"]
           ],
           "linkType": "HARD",
         }]
@@ -7622,7 +7612,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/auth0", "npm:2.34.10"],
             ["@types/boom", "npm:7.3.1"],
             ["@types/express", "npm:4.17.13"],
-            ["@types/http-errors", "npm:1.8.1"],
             ["@types/morgan", "npm:1.9.3"],
             ["@types/node", "npm:16.11.19"],
             ["@types/webpack-env", "npm:1.16.3"],
