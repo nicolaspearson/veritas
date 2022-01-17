@@ -171,7 +171,7 @@ of users to be reflected in internal roles and permissions.
 - Allow account linking when their are multiple accounts using the same email address.
 
 - Determine what Auth0 can store, and how would we extend our Auth0 to access other Okta or Auth0
-  instances of external companies. Can this be solved with OIDC?
+  instances of external companies.
 
 - Create `auth0` actions
 
