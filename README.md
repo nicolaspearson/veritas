@@ -53,6 +53,28 @@ Traditional username and password authentication flow.
 
 - Return a 201 to the user. (The user should be redirected to a login page)
 
+```mermaid
+sequenceDiagram
+    actor User
+    participant API
+    User->>API: /users/registration
+    alt exists in db
+        API->>User: Return a 201
+    else is not in db
+        alt exists
+            API->>Auth0: getUsersByEmail(email)
+            Auth0->>API: Return the user
+            Note over API: Create user in db
+            API->>User: Return a 201
+        else does not exist
+            API->>Auth0: createUser(user)
+            Auth0->>API: Return the user
+            Note over API: Create user in db
+            API->>User: Return a 201
+        end
+    end
+```
+
 #### Login
 
 > A user logs in by providing a username and password:
@@ -74,13 +96,13 @@ Traditional username and password authentication flow.
 sequenceDiagram
     actor User
     participant API
-    User->>API: Submit credentials
+    User->>API: /auth/login
     alt has registered
-        API->>Auth0: Validate credentials
-        alt is valid
+        API->>Auth0: /oauth/token
+        alt valid credentials
             Auth0->>API: Return a JWT
             API->>User: Return a 200 with the JWT
-        else is not valid
+        else invalid credentials
             Auth0->>API: Throws a 401
             API->>User: Return a 404
         end

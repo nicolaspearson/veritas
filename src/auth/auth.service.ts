@@ -19,8 +19,8 @@ export async function login(dto: LoginRequest, ipAddress: string): Promise<strin
   log(`Logging in user with email: ${dto.email}`);
   const user = await getCustomRepository(UserRepository).findByEmail(dto.email);
   if (!user) {
-    // This should be changed to avoid user enumeration attacks.
-    throw Boom.notFound('User does not exist.');
+    // Throw a 404 to avoid user enumeration attacks.
+    throw Boom.notFound('Invalid email address or password provided.');
   }
   return Auth0Client.getInstance().userSignIn(dto, ipAddress);
 }

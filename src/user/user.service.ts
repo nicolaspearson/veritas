@@ -51,8 +51,8 @@ export async function register(dto: RegisterUserRequest): Promise<User> {
   log(`Registering user with email: ${dto.email}`);
   const user = await getCustomRepository(UserRepository).findByEmail(dto.email);
   if (user) {
-    // This should be changed to avoid user enumeration attacks.
-    throw Boom.conflict('User is already registered.');
+    // Return the user in order to return a 201 thereby avoiding user enumeration attacks.
+    return user;
   }
   let auth0Id = await Auth0Client.getInstance().userGetByEmail(dto.email);
   if (!auth0Id) {

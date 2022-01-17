@@ -96,7 +96,8 @@ export class Auth0Client {
         log(axiosError.response?.data);
       }
     }
-    throw Boom.unauthorized('Invalid email address or password provided.');
+    // Throw a 404 to avoid user enumeration attacks.
+    throw Boom.notFound('Invalid email address or password provided.');
   }
 
   /**
