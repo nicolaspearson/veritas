@@ -7,6 +7,7 @@ import path from 'path';
 import 'reflect-metadata';
 
 import authController from '$/auth/auth.controller';
+import auth0Controller from '$/auth0/auth0.controller';
 import { Environment } from '$/common/enums/environment.enum';
 import { log, logger } from '$/common/logger';
 import * as db from '$/db';
@@ -68,6 +69,7 @@ const routes = express
   .Router()
   .use('/', viewEngineController)
   .use('/api/v1/auth', authController)
+  .use('/api/v1/auth0', auth0Controller)
   .use('/api/v1', userController);
 app.use('/', routes);
 

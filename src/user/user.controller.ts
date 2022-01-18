@@ -40,7 +40,7 @@ async function getAuthenticatedUser(req: express.Request, res: express.Response)
 /**
  * POST /users/registration
  *
- * Registers a new user, if the user already exists a 400 will be returned to avoid
+ * Registers a new user, if the user already exists a 201 will be returned to avoid
  * user enumeration attacks, however we are still vulnerable to a timing attack which
  * is out of scope for the moment.
  *

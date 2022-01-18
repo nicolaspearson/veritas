@@ -74,3 +74,20 @@ resource "auth0_connection" "terraform-veritas-google-oauth2" {
     var.auth0_client_id
   ]
 }
+
+resource "auth0_action" "terraform-veritas-post-user-register-action" {
+  name = "post-user-register"
+  code = templatefile("${path.module}/actions/post-user-register.action.js", {
+    API_DOMAIN : var.api_domain
+  })
+  dependencies {
+    name = "axios"
+    version = "latest"
+  }
+  deploy = true
+  runtime = "node16"
+  supported_triggers {
+    id = "post-user-registration"
+    version = "v2"
+  }
+}

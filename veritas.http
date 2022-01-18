@@ -11,18 +11,21 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "john.doe@example.com",
-  "password": "myS3cretP@55w0rd!"
+  "email": "nic.s.pearson@gmail.com",
+  "password": "!Test1234!"
 }
 
-### Authenticates a user (Personal account)
-POST {{baseUrl}}/auth/login HTTP/1.1
+########################################################################
+###########                      AUTH0                       ###########
+########################################################################
+
+### Post user registration hook
+POST {{baseUrl}}/auth0/hooks/post-registration HTTP/1.1
 Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "nic.s.pearson@gmail.com",
-  "password": "!Test1234!"
+  "email": "nic.s.pearson@gmail.com"
 }
 
 ########################################################################
@@ -47,7 +50,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "john.doe@example.com",
-  "password": "myS3cretP@55w0rd!",
-  "name": "John Doe"
+  "email": "nic.s.pearson@gmail.com",
+  "password": "!Test1234!",
+  "name": "Nicolas Pearson"
 }

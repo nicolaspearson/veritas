@@ -9,3 +9,8 @@ variable "auth0_client_secret" {
 variable "auth0_domain" {
   description = "The auth0 domain"
 }
+
+variable "api_domain" {
+  description = "The api domain"
+  default = "localhost:3000"
+}

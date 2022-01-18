@@ -1,5 +1,6 @@
 // Requests
 export { LoginRequest } from './req/login.request.dto';
+export { PostUserRegistrationRequest } from './req/post-user-registration.request.dto';
 export { RegisterUserRequest } from './req/register-user.request.dto';
 // Responses
 export { JwtResponse } from './res/jwt.response.dto';

@@ -164,8 +164,6 @@ The implementation of SSO will allow users to create an account and log in to th
 identity provider they want configured for their organization. They also would like their own groups
 of users to be reflected in internal roles and permissions.
 
-- Create DB schema for organizations, users (members), and roles and permissions.
-
 ## TODO
 
 - Allow account linking when their are multiple accounts using the same email address.
@@ -182,3 +180,5 @@ of users to be reflected in internal roles and permissions.
 - What is the database structure?
 
 - How are the roles and permissions structured?
+
+- Create DB schema for organizations, users (members), and roles and permissions.

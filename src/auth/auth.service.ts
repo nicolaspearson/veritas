@@ -22,5 +22,5 @@ export async function login(dto: LoginRequest, ipAddress: string): Promise<strin
     // Throw a 404 to avoid user enumeration attacks.
     throw Boom.notFound('Invalid email address or password provided.');
   }
-  return Auth0Client.getInstance().userSignIn(dto, ipAddress);
+  return Auth0Client.getInstance().signIn(dto, ipAddress);
 }

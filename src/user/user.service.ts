@@ -44,7 +44,6 @@ export function findUserByAuth0Id(auth0Id: Auth0Id): Promise<User> {
  * @param dto The {@link RegisterUserRequest} object.
  * @returns The created {@link User} object.
  *
- * @throws A ConflictError if the user already exists.
  * @throws An InternalServerError if the database transaction fails.
  */
 export async function register(dto: RegisterUserRequest): Promise<User> {
@@ -54,10 +53,10 @@ export async function register(dto: RegisterUserRequest): Promise<User> {
     // Return the user in order to return a 201 thereby avoiding user enumeration attacks.
     return user;
   }
-  let auth0Id = await Auth0Client.getInstance().userGetByEmail(dto.email);
+  let auth0Id = await Auth0Client.getInstance().getUserByEmail(dto.email);
   if (!auth0Id) {
     // Create the user in auth0
-    auth0Id = await Auth0Client.getInstance().userRegistration(dto);
+    auth0Id = await Auth0Client.getInstance().register(dto);
   }
   // These two statements should be wrapped in a transaction, to allow for rollbacks.
   // Alternatively we should determine if the user already exist in auth0, and
