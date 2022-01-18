@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:5.9.1"],
             ["@typescript-eslint/parser", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:5.9.1"],
             ["auth0", "npm:2.37.0"],
-            ["axios", "npm:0.24.0"],
+            ["axios", "npm:0.25.0"],
             ["boom", "npm:7.3.0"],
             ["class-transformer-validator", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:0.9.1"],
             ["class-validator", "npm:0.13.2"],
@@ -1694,11 +1694,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:0.24.0", {
-          "packageLocation": "./.yarn/cache/axios-npm-0.24.0-39e5c1e79e-468cf496c0.zip/node_modules/axios/",
+        ["npm:0.25.0", {
+          "packageLocation": "./.yarn/cache/axios-npm-0.25.0-a1c287d287-2a8a3787c0.zip/node_modules/axios/",
           "packageDependencies": [
-            ["axios", "npm:0.24.0"],
-            ["follow-redirects", "virtual:e278873748b4e9d158db595d2f6cb0351c74052f52b53924aec4d9299e7b6babfb62aead374cf2f6e453bc8bea3b052380dc6b1137a162bbfc102bbb1c8cac42#npm:1.14.6"]
+            ["axios", "npm:0.25.0"],
+            ["follow-redirects", "virtual:a1c287d287cceec925a9c0ff143359f3710be8008f8559da00a15e4d93f76849e9493b8b7760d073ae605ea56d1482d54174c007b28cbf6b38332d152576190f#npm:1.14.7"]
           ],
           "linkType": "HARD",
         }]
@@ -3666,6 +3666,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["follow-redirects", "npm:1.14.6"]
           ],
           "linkType": "SOFT",
+        }],
+        ["npm:1.14.7", {
+          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.14.7-c87c16ed59-f6d03e5e30.zip/node_modules/follow-redirects/",
+          "packageDependencies": [
+            ["follow-redirects", "npm:1.14.7"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a1c287d287cceec925a9c0ff143359f3710be8008f8559da00a15e4d93f76849e9493b8b7760d073ae605ea56d1482d54174c007b28cbf6b38332d152576190f#npm:1.14.7", {
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-c5047b1a61/0/cache/follow-redirects-npm-1.14.7-c87c16ed59-f6d03e5e30.zip/node_modules/follow-redirects/",
+          "packageDependencies": [
+            ["follow-redirects", "virtual:a1c287d287cceec925a9c0ff143359f3710be8008f8559da00a15e4d93f76849e9493b8b7760d073ae605ea56d1482d54174c007b28cbf6b38332d152576190f#npm:1.14.7"],
+            ["@types/debug", null],
+            ["debug", null]
+          ],
+          "packagePeers": [
+            "@types/debug",
+            "debug"
+          ],
+          "linkType": "HARD",
         }],
         ["virtual:e278873748b4e9d158db595d2f6cb0351c74052f52b53924aec4d9299e7b6babfb62aead374cf2f6e453bc8bea3b052380dc6b1137a162bbfc102bbb1c8cac42#npm:1.14.6", {
           "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-d047bcdd86/0/cache/follow-redirects-npm-1.14.6-0483823f49-7fcdb089a7.zip/node_modules/follow-redirects/",
@@ -7594,7 +7614,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:5.9.1"],
             ["@typescript-eslint/parser", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:5.9.1"],
             ["auth0", "npm:2.37.0"],
-            ["axios", "npm:0.24.0"],
+            ["axios", "npm:0.25.0"],
             ["boom", "npm:7.3.0"],
             ["class-transformer-validator", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:0.9.1"],
             ["class-validator", "npm:0.13.2"],
