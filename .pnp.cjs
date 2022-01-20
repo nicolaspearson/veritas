@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["$", "link:./src::locator=veritas%40workspace%3A."],
-            ["@commitlint/cli", "npm:16.0.2"],
+            ["@commitlint/cli", "npm:16.1.0"],
             ["@commitlint/config-conventional", "npm:16.0.0"],
             ["@types/auth0", "npm:2.34.10"],
             ["@types/boom", "npm:7.3.1"],
@@ -130,13 +130,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@commitlint/cli", [
-        ["npm:16.0.2", {
-          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-16.0.2-0fc722cf95-20760e0f8d.zip/node_modules/@commitlint/cli/",
+        ["npm:16.1.0", {
+          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-16.1.0-26bb6a7c7f-58dced3f3e.zip/node_modules/@commitlint/cli/",
           "packageDependencies": [
-            ["@commitlint/cli", "npm:16.0.2"],
+            ["@commitlint/cli", "npm:16.1.0"],
             ["@commitlint/format", "npm:16.0.0"],
             ["@commitlint/lint", "npm:16.0.0"],
-            ["@commitlint/load", "npm:16.0.0"],
+            ["@commitlint/load", "npm:16.1.0"],
             ["@commitlint/read", "npm:16.0.0"],
             ["@commitlint/types", "npm:16.0.0"],
             ["lodash", "npm:4.17.21"],
@@ -158,10 +158,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@commitlint/config-validator", [
-        ["npm:16.0.0", {
-          "packageLocation": "./.yarn/cache/@commitlint-config-validator-npm-16.0.0-d06568342c-304fe3b1b7.zip/node_modules/@commitlint/config-validator/",
+        ["npm:16.1.0", {
+          "packageLocation": "./.yarn/cache/@commitlint-config-validator-npm-16.1.0-d45eb04db8-410f80e4cf.zip/node_modules/@commitlint/config-validator/",
           "packageDependencies": [
-            ["@commitlint/config-validator", "npm:16.0.0"],
+            ["@commitlint/config-validator", "npm:16.1.0"],
             ["@commitlint/types", "npm:16.0.0"],
             ["ajv", "npm:6.12.6"]
           ],
@@ -224,17 +224,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@commitlint/load", [
-        ["npm:16.0.0", {
-          "packageLocation": "./.yarn/cache/@commitlint-load-npm-16.0.0-50d51cb6d2-33fc082e5a.zip/node_modules/@commitlint/load/",
+        ["npm:16.1.0", {
+          "packageLocation": "./.yarn/cache/@commitlint-load-npm-16.1.0-1e069e6358-154d7cc728.zip/node_modules/@commitlint/load/",
           "packageDependencies": [
-            ["@commitlint/load", "npm:16.0.0"],
-            ["@commitlint/config-validator", "npm:16.0.0"],
+            ["@commitlint/load", "npm:16.1.0"],
+            ["@commitlint/config-validator", "npm:16.1.0"],
             ["@commitlint/execute-rule", "npm:16.0.0"],
-            ["@commitlint/resolve-extends", "npm:16.0.0"],
+            ["@commitlint/resolve-extends", "npm:16.1.0"],
             ["@commitlint/types", "npm:16.0.0"],
             ["chalk", "npm:4.1.2"],
             ["cosmiconfig", "npm:7.0.1"],
-            ["cosmiconfig-typescript-loader", "virtual:50d51cb6d21272a43b8da673166a1da0778bfc4c00e963dc8aaa814cc52ef68622435c3fa03eceed8bea24c3202b77f06b1a6ad28797d271e8832bac946969fd#npm:1.0.3"],
+            ["cosmiconfig-typescript-loader", "virtual:1e069e6358b33cffd9e4698b67ada0085dbc85c6c13d032f34c03cd8560ff76f63350b5c87b3fdca855f7563d7206d915922f15d2bf56fa948af6bd8e12e7c98#npm:1.0.3"],
             ["lodash", "npm:4.17.21"],
             ["resolve-from", "npm:5.0.0"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
@@ -277,11 +277,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@commitlint/resolve-extends", [
-        ["npm:16.0.0", {
-          "packageLocation": "./.yarn/cache/@commitlint-resolve-extends-npm-16.0.0-2632a7f1ba-e7e32fb4ae.zip/node_modules/@commitlint/resolve-extends/",
+        ["npm:16.1.0", {
+          "packageLocation": "./.yarn/cache/@commitlint-resolve-extends-npm-16.1.0-10bdc2f4aa-bffeefb730.zip/node_modules/@commitlint/resolve-extends/",
           "packageDependencies": [
-            ["@commitlint/resolve-extends", "npm:16.0.0"],
-            ["@commitlint/config-validator", "npm:16.0.0"],
+            ["@commitlint/resolve-extends", "npm:16.1.0"],
+            ["@commitlint/config-validator", "npm:16.1.0"],
             ["@commitlint/types", "npm:16.0.0"],
             ["import-fresh", "npm:3.3.0"],
             ["lodash", "npm:4.17.21"],
@@ -2365,15 +2365,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:50d51cb6d21272a43b8da673166a1da0778bfc4c00e963dc8aaa814cc52ef68622435c3fa03eceed8bea24c3202b77f06b1a6ad28797d271e8832bac946969fd#npm:1.0.3", {
-          "packageLocation": "./.yarn/__virtual__/cosmiconfig-typescript-loader-virtual-16808e586d/0/cache/cosmiconfig-typescript-loader-npm-1.0.3-eb5b513847-04ff1b2329.zip/node_modules/cosmiconfig-typescript-loader/",
+        ["virtual:1e069e6358b33cffd9e4698b67ada0085dbc85c6c13d032f34c03cd8560ff76f63350b5c87b3fdca855f7563d7206d915922f15d2bf56fa948af6bd8e12e7c98#npm:1.0.3", {
+          "packageLocation": "./.yarn/__virtual__/cosmiconfig-typescript-loader-virtual-5e91d2bd8b/0/cache/cosmiconfig-typescript-loader-npm-1.0.3-eb5b513847-04ff1b2329.zip/node_modules/cosmiconfig-typescript-loader/",
           "packageDependencies": [
-            ["cosmiconfig-typescript-loader", "virtual:50d51cb6d21272a43b8da673166a1da0778bfc4c00e963dc8aaa814cc52ef68622435c3fa03eceed8bea24c3202b77f06b1a6ad28797d271e8832bac946969fd#npm:1.0.3"],
+            ["cosmiconfig-typescript-loader", "virtual:1e069e6358b33cffd9e4698b67ada0085dbc85c6c13d032f34c03cd8560ff76f63350b5c87b3fdca855f7563d7206d915922f15d2bf56fa948af6bd8e12e7c98#npm:1.0.3"],
             ["@types/cosmiconfig", null],
             ["@types/node", null],
             ["@types/typescript", null],
             ["cosmiconfig", "npm:7.0.1"],
-            ["ts-node", "virtual:16808e586d19ab3d38cd40a2c8f14874210702a2be2e628c83ee2fd76a032dc8d2e821e1aa47ea55543dd46b75268931e464c5d7d460db11a08cc988daed8420#npm:10.4.0"],
+            ["ts-node", "virtual:5e91d2bd8b6e5ee33d4cd050432011a3b38771d847195a372c29b0266d5843b0d330afde471ef6c91e90cce4a48be1425359338e06130f7ffcd5f543d95424bc#npm:10.4.0"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "packagePeers": [
@@ -7174,10 +7174,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:16808e586d19ab3d38cd40a2c8f14874210702a2be2e628c83ee2fd76a032dc8d2e821e1aa47ea55543dd46b75268931e464c5d7d460db11a08cc988daed8420#npm:10.4.0", {
-          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-41bb4b8965/0/cache/ts-node-npm-10.4.0-04cb6e2279-3933ac0a93.zip/node_modules/ts-node/",
+        ["virtual:5e91d2bd8b6e5ee33d4cd050432011a3b38771d847195a372c29b0266d5843b0d330afde471ef6c91e90cce4a48be1425359338e06130f7ffcd5f543d95424bc#npm:10.4.0", {
+          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-26058de009/0/cache/ts-node-npm-10.4.0-04cb6e2279-3933ac0a93.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "virtual:16808e586d19ab3d38cd40a2c8f14874210702a2be2e628c83ee2fd76a032dc8d2e821e1aa47ea55543dd46b75268931e464c5d7d460db11a08cc988daed8420#npm:10.4.0"],
+            ["ts-node", "virtual:5e91d2bd8b6e5ee33d4cd050432011a3b38771d847195a372c29b0266d5843b0d330afde471ef6c91e90cce4a48be1425359338e06130f7ffcd5f543d95424bc#npm:10.4.0"],
             ["@cspotcode/source-map-support", "npm:0.7.0"],
             ["@swc/core", null],
             ["@swc/wasm", null],
@@ -7605,7 +7605,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["veritas", "workspace:."],
             ["$", "link:./src::locator=veritas%40workspace%3A."],
-            ["@commitlint/cli", "npm:16.0.2"],
+            ["@commitlint/cli", "npm:16.1.0"],
             ["@commitlint/config-conventional", "npm:16.0.0"],
             ["@types/auth0", "npm:2.34.10"],
             ["@types/boom", "npm:7.3.1"],
