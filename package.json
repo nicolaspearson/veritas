@@ -64,7 +64,7 @@
     "typeorm": "^0.2.41"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.2",
+    "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@types/auth0": "^2.34.10",
     "@types/boom": "^7.3.1",
@@ -94,8 +94,8 @@
     "run-script-webpack-plugin": "^0.0.11",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.4",
-    "webpack": "^5.66.0",
+    "typescript": "^4.5.5",
+    "webpack": "^5.67.0",
     "webpack-cli": "^4.9.1",
     "webpack-pnp-externals": "^1.1.0"
   },
