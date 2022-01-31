@@ -67,7 +67,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-unicorn", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:40.1.0"],
             ["express", "npm:4.17.2"],
             ["express-oauth2-jwt-bearer", "npm:1.1.0"],
-            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.5.2"],
+            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.6.0"],
             ["husky", "npm:7.0.4"],
             ["markdownlint-cli", "npm:0.30.0"],
             ["morgan", "npm:1.10.0"],
@@ -3373,17 +3373,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["express-openid-connect", [
-        ["npm:2.5.2", {
-          "packageLocation": "./.yarn/cache/express-openid-connect-npm-2.5.2-a685c52a70-0ec572cae9.zip/node_modules/express-openid-connect/",
+        ["npm:2.6.0", {
+          "packageLocation": "./.yarn/cache/express-openid-connect-npm-2.6.0-424a34cab8-fe406e726d.zip/node_modules/express-openid-connect/",
           "packageDependencies": [
-            ["express-openid-connect", "npm:2.5.2"]
+            ["express-openid-connect", "npm:2.6.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.5.2", {
-          "packageLocation": "./.yarn/__virtual__/express-openid-connect-virtual-ea3ceaed89/0/cache/express-openid-connect-npm-2.5.2-a685c52a70-0ec572cae9.zip/node_modules/express-openid-connect/",
+        ["virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.6.0", {
+          "packageLocation": "./.yarn/__virtual__/express-openid-connect-virtual-728d594573/0/cache/express-openid-connect-npm-2.6.0-424a34cab8-fe406e726d.zip/node_modules/express-openid-connect/",
           "packageDependencies": [
-            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.5.2"],
+            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.6.0"],
             ["@types/express", "npm:4.17.13"],
             ["base64url", "npm:3.0.1"],
             ["cb", "npm:0.1.0"],
@@ -3391,9 +3391,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cookie", "npm:0.4.1"],
             ["debug", "virtual:428f325a939c2653ad822eb3d75efb02ac311523dd0d4f9645afc39ea00bd86eceac35a9d59c9b6977d76b670a4ef0ae057ea572338a44729aa592711a8c05a3#npm:4.3.3"],
             ["express", "npm:4.17.2"],
-            ["futoin-hkdf", "npm:1.4.3"],
+            ["futoin-hkdf", "npm:1.5.0"],
             ["http-errors", "npm:1.8.1"],
-            ["joi", "npm:17.5.0"],
+            ["joi", "npm:17.6.0"],
             ["jose", "npm:2.0.5"],
             ["on-headers", "npm:1.0.2"],
             ["openid-client", "npm:4.9.1"],
@@ -3709,10 +3709,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["futoin-hkdf", [
-        ["npm:1.4.3", {
-          "packageLocation": "./.yarn/cache/futoin-hkdf-npm-1.4.3-e8fc1d8e75-ec5a4bd414.zip/node_modules/futoin-hkdf/",
+        ["npm:1.5.0", {
+          "packageLocation": "./.yarn/cache/futoin-hkdf-npm-1.5.0-ed4ca1aa0f-c0819311f6.zip/node_modules/futoin-hkdf/",
           "packageDependencies": [
-            ["futoin-hkdf", "npm:1.4.3"]
+            ["futoin-hkdf", "npm:1.5.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4502,10 +4502,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["joi", [
-        ["npm:17.5.0", {
-          "packageLocation": "./.yarn/cache/joi-npm-17.5.0-02b9b7e605-6a20d009d2.zip/node_modules/joi/",
+        ["npm:17.6.0", {
+          "packageLocation": "./.yarn/cache/joi-npm-17.6.0-987ef6515f-eaf62f6c02.zip/node_modules/joi/",
           "packageDependencies": [
-            ["joi", "npm:17.5.0"],
+            ["joi", "npm:17.6.0"],
             ["@hapi/hoek", "npm:9.2.1"],
             ["@hapi/topo", "npm:5.1.0"],
             ["@sideway/address", "npm:4.1.3"],
@@ -7561,7 +7561,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-unicorn", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:40.1.0"],
             ["express", "npm:4.17.2"],
             ["express-oauth2-jwt-bearer", "npm:1.1.0"],
-            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.5.2"],
+            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.6.0"],
             ["husky", "npm:7.0.4"],
             ["markdownlint-cli", "npm:0.30.0"],
             ["morgan", "npm:1.10.0"],

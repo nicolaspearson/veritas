@@ -1832,7 +1832,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2":
+"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3":
   version: 4.3.3
   resolution: "debug@npm:4.3.3"
   dependencies:
@@ -2563,26 +2563,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express-openid-connect@npm:^2.5.2":
-  version: 2.5.2
-  resolution: "express-openid-connect@npm:2.5.2"
+"express-openid-connect@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "express-openid-connect@npm:2.6.0"
   dependencies:
     base64url: ^3.0.1
     cb: ^0.1.0
     clone: ^2.1.2
     cookie: ^0.4.1
-    debug: ^4.3.2
-    futoin-hkdf: ^1.4.2
-    http-errors: ^1.8.0
-    joi: ^17.4.2
+    debug: ^4.3.3
+    futoin-hkdf: ^1.4.3
+    http-errors: ^1.8.1
+    joi: ^17.5.0
     jose: ^2.0.5
     on-headers: ^1.0.2
     openid-client: ^4.9.1
-    p-memoize: ^4.0.2
+    p-memoize: ^4.0.4
     url-join: ^4.0.1
   peerDependencies:
     express: ">= 4.17.0"
-  checksum: 0ec572cae9468840f283ff64212371ba8b8c0ea2bab9901491c26436ec7a9c8da59954c255a17645f5785d7591b96ba4a729bfd8193d38089eb6a33ebeda4c5a
+  checksum: fe406e726d5e097487629146bcc47f494bcc67950deec8f876fa762d7816a1f11cf5ed8a68b7a32dd6fd2860606fa95b13c9b0098449dcab90efa51413dcc962
   languageName: node
   linkType: hard
 
@@ -2867,10 +2867,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"futoin-hkdf@npm:^1.4.2":
-  version: 1.4.3
-  resolution: "futoin-hkdf@npm:1.4.3"
-  checksum: ec5a4bd414ef2108c2edaa62ef42b2353c0657168a7eb3702b390fbc82ec4b9c24f8ad42493af91efca3fee24f2d1225dadaf79525eba2308e8caaf959a581ad
+"futoin-hkdf@npm:^1.4.3":
+  version: 1.5.0
+  resolution: "futoin-hkdf@npm:1.5.0"
+  checksum: c0819311f68ec1ba00d35b78ea6b825910def70a5fd330f2cc66e914e7ddb0b9ff267911286062324b120ad5f06fca5a1b09591473c553ac0bf0585a87fc9c72
   languageName: node
   linkType: hard
 
@@ -3127,7 +3127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"http-errors@npm:1.8.1, http-errors@npm:^1.8.0":
+"http-errors@npm:1.8.1, http-errors@npm:^1.8.1":
   version: 1.8.1
   resolution: "http-errors@npm:1.8.1"
   dependencies:
@@ -3562,16 +3562,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.4.2":
-  version: 17.5.0
-  resolution: "joi@npm:17.5.0"
+"joi@npm:^17.5.0":
+  version: 17.6.0
+  resolution: "joi@npm:17.6.0"
   dependencies:
     "@hapi/hoek": ^9.0.0
     "@hapi/topo": ^5.0.0
     "@sideway/address": ^4.1.3
     "@sideway/formula": ^3.0.0
     "@sideway/pinpoint": ^2.0.0
-  checksum: 6a20d009d2fa8a72dbfd9bc739d240f678b09d3a16c05b4bfb4e2d0503e60f7d7914250f0bfc52fb79a537490739ba36a1ace00a05b8ddecaaacfcedafc5c8b9
+  checksum: eaf62f6c02f2edb1042f1ab04fc23a5918a2cb8f54bec84c6e1033624d8a462c10ae9518af55a3ba84f1793960450d58094eda308e7ef93c17edd4e3c8ef31d5
   languageName: node
   linkType: hard
 
@@ -4536,7 +4536,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-memoize@npm:^4.0.2":
+"p-memoize@npm:^4.0.4":
   version: 4.0.4
   resolution: "p-memoize@npm:4.0.4"
   dependencies:
@@ -6181,7 +6181,7 @@ __metadata:
     eslint-plugin-unicorn: ^40.1.0
     express: ^4.17.2
     express-oauth2-jwt-bearer: ^1.1.0
-    express-openid-connect: ^2.5.2
+    express-openid-connect: ^2.6.0
     husky: ^7.0.4
     markdownlint-cli: ^0.30.0
     morgan: ^1.10.0
