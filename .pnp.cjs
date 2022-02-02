@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["boom", "npm:7.3.0"],
             ["class-transformer-validator", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:0.9.1"],
             ["class-validator", "npm:0.13.2"],
-            ["dotenv", "npm:15.0.0"],
+            ["dotenv", "npm:16.0.0"],
             ["ejs", "npm:3.1.6"],
             ["eslint", "npm:8.8.0"],
             ["eslint-config-prettier", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.3.0"],
@@ -2651,10 +2651,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["dotenv", [
-        ["npm:15.0.0", {
-          "packageLocation": "./.yarn/cache/dotenv-npm-15.0.0-596676c735-be5d852b2a.zip/node_modules/dotenv/",
+        ["npm:16.0.0", {
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.0-ef4a5ccded-664cebb51f.zip/node_modules/dotenv/",
           "packageDependencies": [
-            ["dotenv", "npm:15.0.0"]
+            ["dotenv", "npm:16.0.0"]
           ],
           "linkType": "HARD",
         }],
@@ -7623,7 +7623,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["boom", "npm:7.3.0"],
             ["class-transformer-validator", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:0.9.1"],
             ["class-validator", "npm:0.13.2"],
-            ["dotenv", "npm:15.0.0"],
+            ["dotenv", "npm:16.0.0"],
             ["ejs", "npm:3.1.6"],
             ["eslint", "npm:8.8.0"],
             ["eslint-config-prettier", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.3.0"],
