@@ -71,7 +71,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:7.0.4"],
             ["markdownlint-cli", "npm:0.30.0"],
             ["morgan", "npm:1.10.0"],
-            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.1"],
+            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.5.1"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -5890,23 +5890,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["pg", [
-        ["npm:8.7.1", {
-          "packageLocation": "./.yarn/cache/pg-npm-8.7.1-47be8f5ecd-3a17d9a73d.zip/node_modules/pg/",
+        ["npm:8.7.3", {
+          "packageLocation": "./.yarn/cache/pg-npm-8.7.3-5d68c1b41b-d0e7040967.zip/node_modules/pg/",
           "packageDependencies": [
-            ["pg", "npm:8.7.1"]
+            ["pg", "npm:8.7.3"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.1", {
-          "packageLocation": "./.yarn/__virtual__/pg-virtual-a14aa3fe74/0/cache/pg-npm-8.7.1-47be8f5ecd-3a17d9a73d.zip/node_modules/pg/",
+        ["virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3", {
+          "packageLocation": "./.yarn/__virtual__/pg-virtual-a7e46d1ed1/0/cache/pg-npm-8.7.3-5d68c1b41b-d0e7040967.zip/node_modules/pg/",
           "packageDependencies": [
-            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.1"],
+            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"],
             ["@types/pg-native", null],
             ["buffer-writer", "npm:2.0.0"],
             ["packet-reader", "npm:1.0.0"],
             ["pg-connection-string", "npm:2.5.0"],
             ["pg-native", null],
-            ["pg-pool", "virtual:a14aa3fe74bc9c435b52539164fde6af50d0183b686ad890ed0e1c6c5a57900b8412ccd34988cf6181e26e88f47a688911d97ce5f2bafdd905f0d5e63f363361#npm:3.4.1"],
+            ["pg-pool", "virtual:a7e46d1ed1086ef73d4f61ebb3000100cb0fca8bda6a133aa6a8e4e0692d642fb394a6f86d3e6b553f2ec3a5f821052896c1d849b4278e76b3a1423b4485148c#npm:3.5.1"],
             ["pg-protocol", "npm:1.5.0"],
             ["pg-types", "npm:2.2.0"],
             ["pgpass", "npm:1.0.5"]
@@ -5937,19 +5937,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["pg-pool", [
-        ["npm:3.4.1", {
-          "packageLocation": "./.yarn/cache/pg-pool-npm-3.4.1-14f060ebff-50d68bd99a.zip/node_modules/pg-pool/",
+        ["npm:3.5.1", {
+          "packageLocation": "./.yarn/cache/pg-pool-npm-3.5.1-cba2f25ddc-42833c25f1.zip/node_modules/pg-pool/",
           "packageDependencies": [
-            ["pg-pool", "npm:3.4.1"]
+            ["pg-pool", "npm:3.5.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:a14aa3fe74bc9c435b52539164fde6af50d0183b686ad890ed0e1c6c5a57900b8412ccd34988cf6181e26e88f47a688911d97ce5f2bafdd905f0d5e63f363361#npm:3.4.1", {
-          "packageLocation": "./.yarn/__virtual__/pg-pool-virtual-d213b30354/0/cache/pg-pool-npm-3.4.1-14f060ebff-50d68bd99a.zip/node_modules/pg-pool/",
+        ["virtual:a7e46d1ed1086ef73d4f61ebb3000100cb0fca8bda6a133aa6a8e4e0692d642fb394a6f86d3e6b553f2ec3a5f821052896c1d849b4278e76b3a1423b4485148c#npm:3.5.1", {
+          "packageLocation": "./.yarn/__virtual__/pg-pool-virtual-07ba758a69/0/cache/pg-pool-npm-3.5.1-cba2f25ddc-42833c25f1.zip/node_modules/pg-pool/",
           "packageDependencies": [
-            ["pg-pool", "virtual:a14aa3fe74bc9c435b52539164fde6af50d0183b686ad890ed0e1c6c5a57900b8412ccd34988cf6181e26e88f47a688911d97ce5f2bafdd905f0d5e63f363361#npm:3.4.1"],
+            ["pg-pool", "virtual:a7e46d1ed1086ef73d4f61ebb3000100cb0fca8bda6a133aa6a8e4e0692d642fb394a6f86d3e6b553f2ec3a5f821052896c1d849b4278e76b3a1423b4485148c#npm:3.5.1"],
             ["@types/pg", null],
-            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.1"]
+            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"]
           ],
           "packagePeers": [
             "@types/pg",
@@ -7403,7 +7403,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mssql", null],
             ["mysql2", null],
             ["oracledb", null],
-            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.1"],
+            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"],
             ["pg-native", null],
             ["pg-query-stream", null],
             ["redis", null],
@@ -7643,7 +7643,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:7.0.4"],
             ["markdownlint-cli", "npm:0.30.0"],
             ["morgan", "npm:1.10.0"],
-            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.1"],
+            ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.5.1"],
             ["reflect-metadata", "npm:0.1.13"],
