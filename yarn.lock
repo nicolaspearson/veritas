@@ -1240,18 +1240,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"auth0@npm:^2.39.0":
-  version: 2.39.0
-  resolution: "auth0@npm:2.39.0"
+"auth0@npm:^2.40.0":
+  version: 2.40.0
+  resolution: "auth0@npm:2.40.0"
   dependencies:
-    axios: ^0.24.0
+    axios: ^0.25.0
     form-data: ^3.0.1
     jsonwebtoken: ^8.5.1
     jwks-rsa: ^1.12.1
     lru-memoizer: ^2.1.4
     rest-facade: ^1.16.3
     retry: ^0.13.1
-  checksum: 3cad9ceb7f741a0827811fa2e2df42970c8388db71b5a54590d2ae3fd53d3de7d1302421db9003db83d4e938932231cf6772af73c37a43faefb4e3c724126548
+  checksum: bb496223ea287cc2d14dc9348caa36dd31d1ab8b90c9fa9efda5217f9447fea623669c5e6cdd711f173b292b96ce7018054e4b57c9a7d367e43e0cbbd8d18d87
   languageName: node
   linkType: hard
 
@@ -1261,15 +1261,6 @@ __metadata:
   dependencies:
     follow-redirects: ^1.14.0
   checksum: 44245f24ac971e7458f3120c92f9d66d1fc695e8b97019139de5b0cc65d9b8104647db01e5f46917728edfc0cfd88eb30fc4c55e6053eef4ace76768ce95ff3c
-  languageName: node
-  linkType: hard
-
-"axios@npm:^0.24.0":
-  version: 0.24.0
-  resolution: "axios@npm:0.24.0"
-  dependencies:
-    follow-redirects: ^1.14.4
-  checksum: 468cf496c08a6aadfb7e699bebdac02851e3043d4e7d282350804ea8900e30d368daa6e3cd4ab83b8ddb5a3b1e17a5a21ada13fc9cebd27b74828f47a4236316
   languageName: node
   linkType: hard
 
@@ -2847,7 +2838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.4, follow-redirects@npm:^1.14.7":
+"follow-redirects@npm:^1.14.7":
   version: 1.14.7
   resolution: "follow-redirects@npm:1.14.7"
   peerDependenciesMeta:
@@ -6278,7 +6269,7 @@ __metadata:
     "@types/webpack-env": ^1.16.3
     "@typescript-eslint/eslint-plugin": ^5.11.0
     "@typescript-eslint/parser": ^5.11.0
-    auth0: ^2.39.0
+    auth0: ^2.40.0
     axios: ^0.25.0
     boom: ^7.3.0
     class-transformer-validator: ^0.9.1

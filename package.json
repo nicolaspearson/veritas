@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "$": "link:./src",
-    "auth0": "^2.39.0",
+    "auth0": "^2.40.0",
     "axios": "^0.25.0",
     "boom": "^7.3.0",
     "class-transformer-validator": "^0.9.1",
