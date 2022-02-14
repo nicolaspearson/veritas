@@ -680,7 +680,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.12.0":
+"@typescript-eslint/parser@npm:^5.11.1-alpha":
   version: 5.12.0
   resolution: "@typescript-eslint/parser@npm:5.12.0"
   dependencies:
@@ -6295,7 +6295,7 @@ __metadata:
     "@types/node": ^16.11.24
     "@types/webpack-env": ^1.16.3
     "@typescript-eslint/eslint-plugin": ^5.12.0
-    "@typescript-eslint/parser": ^5.12.0
+    "@typescript-eslint/parser": ^5.11.1-alpha
     auth0: ^2.40.0
     axios: ^0.26.0
     boom: ^7.3.0
