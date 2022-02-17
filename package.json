@@ -55,7 +55,7 @@
     "class-validator": "^0.13.2",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "express-oauth2-jwt-bearer": "^1.1.0",
     "express-openid-connect": "^2.6.0",
     "morgan": "^1.10.0",
