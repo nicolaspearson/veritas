@@ -1,7 +1,6 @@
 import Boom from 'boom';
 import {
   AbstractRepository,
-  DeepPartial,
   DeleteResult,
   EntityManager,
   EntityRepository,
@@ -21,7 +20,7 @@ export class UserRepository extends AbstractRepository<User> {
     return this.manager.createQueryBuilder(User, 'user');
   }
 
-  create(data: DeepPartial<User>): Promise<User> {
+  create(data: { auth0Id: Auth0Id; email: Email; name: string; password: string }): Promise<User> {
     const payload: QueryDeepPartialEntity<User> = {
       ...data,
     };
