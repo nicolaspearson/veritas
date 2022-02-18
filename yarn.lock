@@ -2656,16 +2656,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express-openid-connect@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "express-openid-connect@npm:2.6.0"
+"express-openid-connect@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "express-openid-connect@npm:2.7.0"
   dependencies:
     base64url: ^3.0.1
     cb: ^0.1.0
     clone: ^2.1.2
     cookie: ^0.4.1
     debug: ^4.3.3
-    futoin-hkdf: ^1.4.3
+    futoin-hkdf: ^1.5.0
     http-errors: ^1.8.1
     joi: ^17.5.0
     jose: ^2.0.5
@@ -2675,7 +2675,7 @@ __metadata:
     url-join: ^4.0.1
   peerDependencies:
     express: ">= 4.17.0"
-  checksum: fe406e726d5e097487629146bcc47f494bcc67950deec8f876fa762d7816a1f11cf5ed8a68b7a32dd6fd2860606fa95b13c9b0098449dcab90efa51413dcc962
+  checksum: 0fc538a46be5e07f88e93726cbbb41838a0ab77fbff1162845486409345f46b2cd8744b32e0f6fd62afed2769a646351893cee341cdb4a9354dedaaf175440be
   languageName: node
   linkType: hard
 
@@ -2970,7 +2970,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"futoin-hkdf@npm:^1.4.3":
+"futoin-hkdf@npm:^1.5.0":
   version: 1.5.0
   resolution: "futoin-hkdf@npm:1.5.0"
   checksum: c0819311f68ec1ba00d35b78ea6b825910def70a5fd330f2cc66e914e7ddb0b9ff267911286062324b120ad5f06fca5a1b09591473c553ac0bf0585a87fc9c72
@@ -6351,7 +6351,7 @@ __metadata:
     eslint-plugin-unicorn: ^41.0.0
     express: ^4.17.3
     express-oauth2-jwt-bearer: ^1.1.0
-    express-openid-connect: ^2.6.0
+    express-openid-connect: ^2.7.0
     husky: ^7.0.4
     markdownlint-cli: ^0.31.1
     morgan: ^1.10.0

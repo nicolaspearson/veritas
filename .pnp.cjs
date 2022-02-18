@@ -67,7 +67,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-unicorn", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:41.0.0"],
             ["express", "npm:4.17.3"],
             ["express-oauth2-jwt-bearer", "npm:1.1.0"],
-            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.6.0"],
+            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.7.0"],
             ["husky", "npm:7.0.4"],
             ["markdownlint-cli", "npm:0.31.1"],
             ["morgan", "npm:1.10.0"],
@@ -3482,17 +3482,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["express-openid-connect", [
-        ["npm:2.6.0", {
-          "packageLocation": "./.yarn/cache/express-openid-connect-npm-2.6.0-424a34cab8-fe406e726d.zip/node_modules/express-openid-connect/",
+        ["npm:2.7.0", {
+          "packageLocation": "./.yarn/cache/express-openid-connect-npm-2.7.0-b65e4d8088-0fc538a46b.zip/node_modules/express-openid-connect/",
           "packageDependencies": [
-            ["express-openid-connect", "npm:2.6.0"]
+            ["express-openid-connect", "npm:2.7.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.6.0", {
-          "packageLocation": "./.yarn/__virtual__/express-openid-connect-virtual-728d594573/0/cache/express-openid-connect-npm-2.6.0-424a34cab8-fe406e726d.zip/node_modules/express-openid-connect/",
+        ["virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.7.0", {
+          "packageLocation": "./.yarn/__virtual__/express-openid-connect-virtual-10e6289901/0/cache/express-openid-connect-npm-2.7.0-b65e4d8088-0fc538a46b.zip/node_modules/express-openid-connect/",
           "packageDependencies": [
-            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.6.0"],
+            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.7.0"],
             ["@types/express", "npm:4.17.13"],
             ["base64url", "npm:3.0.1"],
             ["cb", "npm:0.1.0"],
@@ -7697,7 +7697,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-unicorn", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:41.0.0"],
             ["express", "npm:4.17.3"],
             ["express-oauth2-jwt-bearer", "npm:1.1.0"],
-            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.6.0"],
+            ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.7.0"],
             ["husky", "npm:7.0.4"],
             ["markdownlint-cli", "npm:0.31.1"],
             ["morgan", "npm:1.10.0"],
