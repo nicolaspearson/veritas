@@ -88,7 +88,7 @@
     "eslint-plugin-unicorn": "^41.0.0",
     "husky": "^7.0.4",
     "markdownlint-cli": "^0.31.1",
-    "pinst": "^2.1.6",
+    "pinst": "^3.0.0",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "run-script-webpack-plugin": "^0.0.11",
