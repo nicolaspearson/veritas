@@ -2656,9 +2656,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express-openid-connect@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "express-openid-connect@npm:2.7.0"
+"express-openid-connect@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "express-openid-connect@npm:2.7.1"
   dependencies:
     base64url: ^3.0.1
     cb: ^0.1.0
@@ -2667,7 +2667,7 @@ __metadata:
     debug: ^4.3.3
     futoin-hkdf: ^1.5.0
     http-errors: ^1.8.1
-    joi: ^17.5.0
+    joi: ^17.6.0
     jose: ^2.0.5
     on-headers: ^1.0.2
     openid-client: ^4.9.1
@@ -2675,7 +2675,7 @@ __metadata:
     url-join: ^4.0.1
   peerDependencies:
     express: ">= 4.17.0"
-  checksum: 0fc538a46be5e07f88e93726cbbb41838a0ab77fbff1162845486409345f46b2cd8744b32e0f6fd62afed2769a646351893cee341cdb4a9354dedaaf175440be
+  checksum: cb1be534df6aefbbd4c70371cab20ab2a432a41b3d904afea19f200e14805dd06d9a314610f6186b48565b350419e1b90846128fa2d514d0d4d0347a10b2edff
   languageName: node
   linkType: hard
 
@@ -3651,7 +3651,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.5.0":
+"joi@npm:^17.6.0":
   version: 17.6.0
   resolution: "joi@npm:17.6.0"
   dependencies:
@@ -6342,7 +6342,7 @@ __metadata:
     eslint-plugin-unicorn: ^41.0.0
     express: ^4.17.3
     express-oauth2-jwt-bearer: ^1.1.0
-    express-openid-connect: ^2.7.0
+    express-openid-connect: ^2.7.1
     husky: ^7.0.4
     markdownlint-cli: ^0.31.1
     morgan: ^1.10.0
