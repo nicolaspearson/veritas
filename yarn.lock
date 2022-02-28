@@ -249,9 +249,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@eslint/eslintrc@npm:1.1.0"
+"@eslint/eslintrc@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@eslint/eslintrc@npm:1.2.0"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.3.2
@@ -262,7 +262,7 @@ __metadata:
     js-yaml: ^4.1.0
     minimatch: ^3.0.4
     strip-json-comments: ^3.1.1
-  checksum: 784aa2157e2808b52bbbaf1d1cfca9a6ba0b2faaa3696eb7a1229d4b357400fbd8a6aa09a16e7ae0868ea075d3a8f365cf5928b6d05a1df47f40a1167423a4fa
+  checksum: a5e51dcf02627363567094456d7880b46b6a14a285d7a057f083ca903bdd862483bb6314cbc9fb6fa2d2c4537d50e0d28bd5e39650840241ae4796faaec65d2e
   languageName: node
   linkType: hard
 
@@ -603,10 +603,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.25":
-  version: 16.11.25
-  resolution: "@types/node@npm:16.11.25"
-  checksum: 0b6e25a81364be89256ad1a36341e27b387e646d3186e270108a8bb7b6ecdfdf5ae037aa1c75a5117b8a7509c80093b75431cd5cfcfbc4d553b52e7db2ca272e
+"@types/node@npm:^16.11.26":
+  version: 16.11.26
+  resolution: "@types/node@npm:16.11.26"
+  checksum: 57757caaba3f0d95de82198cb276a1002c49b710108c932a1d02d7c91ff2fa57cfe2dd19fde60853b6dd90b0964b3cf35557981d2628e20aed6a909057aedfe6
   languageName: node
   linkType: hard
 
@@ -2521,11 +2521,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.9.0":
-  version: 8.9.0
-  resolution: "eslint@npm:8.9.0"
+"eslint@npm:^8.10.0":
+  version: 8.10.0
+  resolution: "eslint@npm:8.10.0"
   dependencies:
-    "@eslint/eslintrc": ^1.1.0
+    "@eslint/eslintrc": ^1.2.0
     "@humanwhocodes/config-array": ^0.9.2
     ajv: ^6.10.0
     chalk: ^4.0.0
@@ -2562,7 +2562,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 8efecdb9752ee6cb4d2787a14e00cbeab29562ed95dd71c6f3f8ac410426a067d5aa659416d2290e46ca44bc5607e6a6e6c62f814694d8639f80666f522022a7
+  checksum: 8b31ab3de5b48b6828bf13c09c9e62ee0045fa0afa017efaa73eedcf4dc33bc204ee4c467d4677e37967d1645f73816ddef4271422e691fded352040f8f83093
   languageName: node
   linkType: hard
 
@@ -2656,9 +2656,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express-openid-connect@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "express-openid-connect@npm:2.7.0"
+"express-openid-connect@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "express-openid-connect@npm:2.7.1"
   dependencies:
     base64url: ^3.0.1
     cb: ^0.1.0
@@ -2667,7 +2667,7 @@ __metadata:
     debug: ^4.3.3
     futoin-hkdf: ^1.5.0
     http-errors: ^1.8.1
-    joi: ^17.5.0
+    joi: ^17.6.0
     jose: ^2.0.5
     on-headers: ^1.0.2
     openid-client: ^4.9.1
@@ -2675,7 +2675,7 @@ __metadata:
     url-join: ^4.0.1
   peerDependencies:
     express: ">= 4.17.0"
-  checksum: 0fc538a46be5e07f88e93726cbbb41838a0ab77fbff1162845486409345f46b2cd8744b32e0f6fd62afed2769a646351893cee341cdb4a9354dedaaf175440be
+  checksum: cb1be534df6aefbbd4c70371cab20ab2a432a41b3d904afea19f200e14805dd06d9a314610f6186b48565b350419e1b90846128fa2d514d0d4d0347a10b2edff
   languageName: node
   linkType: hard
 
@@ -3651,7 +3651,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.5.0":
+"joi@npm:^17.6.0":
   version: 17.6.0
   resolution: "joi@npm:17.6.0"
   dependencies:
@@ -6066,9 +6066,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typeorm@npm:^0.2.43":
-  version: 0.2.43
-  resolution: "typeorm@npm:0.2.43"
+"typeorm@npm:^0.2.44":
+  version: 0.2.44
+  resolution: "typeorm@npm:0.2.44"
   dependencies:
     "@sqltools/formatter": ^1.2.2
     app-root-path: ^3.0.0
@@ -6136,7 +6136,7 @@ __metadata:
       optional: true
   bin:
     typeorm: cli.js
-  checksum: cd9dd1f5804ac2b56f8b913d5fe58cb371d27f28fe31297c2588d875927de92ad3dbb00b10e0cd8ed638e570ddc0e6813e69cf9251aefc97406f1f3578cbfa81
+  checksum: f89deb1f0e9451964ab7c2d5d16ac902079f0eb061d7d0663fe94180f86c42dc2150ee9bf433389e67b4e55e9581836084419a6bbacdc393f44b8ae7b4e9f5da
   languageName: node
   linkType: hard
 
@@ -6317,7 +6317,7 @@ __metadata:
     "@types/boom": ^7.3.1
     "@types/express": ^4.17.13
     "@types/morgan": ^1.9.3
-    "@types/node": ^16.11.25
+    "@types/node": ^16.11.26
     "@types/webpack-env": ^1.16.3
     "@typescript-eslint/eslint-plugin": ^5.12.1
     "@typescript-eslint/parser": ^5.12.1
@@ -6328,7 +6328,7 @@ __metadata:
     class-validator: ^0.13.2
     dotenv: ^16.0.0
     ejs: ^3.1.6
-    eslint: ^8.9.0
+    eslint: ^8.10.0
     eslint-config-prettier: ^8.4.0
     eslint-import-resolver-node: ^0.3.6
     eslint-import-resolver-typescript: ^2.5.0
@@ -6342,7 +6342,7 @@ __metadata:
     eslint-plugin-unicorn: ^41.0.0
     express: ^4.17.3
     express-oauth2-jwt-bearer: ^1.1.0
-    express-openid-connect: ^2.7.0
+    express-openid-connect: ^2.7.1
     husky: ^7.0.4
     markdownlint-cli: ^0.31.1
     morgan: ^1.10.0
@@ -6354,7 +6354,7 @@ __metadata:
     run-script-webpack-plugin: ^0.0.11
     ts-loader: ^9.2.6
     ts-node: ^10.5.0
-    typeorm: ^0.2.43
+    typeorm: ^0.2.44
     typescript: ^4.5.5
     webpack: ^5.69.1
     webpack-cli: ^4.9.2
