@@ -64,7 +64,7 @@
     "typeorm": "^0.2.45"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.1",
+    "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@types/auth0": "^2.34.13",
     "@types/boom": "^7.3.1",
