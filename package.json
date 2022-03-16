@@ -9,7 +9,7 @@
   "author": "Nicolas Pearson",
   "license": "MIT",
   "engines": {
-    "node": ">=v16.14.0"
+    "node": ">=v16.14.1"
   },
   "main": "src/index.ts",
   "scripts": {
