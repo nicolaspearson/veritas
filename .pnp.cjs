@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["$", "link:./src::locator=veritas%40workspace%3A."],\
             ["@commitlint/cli", "npm:16.2.3"],\
             ["@commitlint/config-conventional", "npm:16.2.1"],\
-            ["@types/auth0", "npm:2.34.13"],\
+            ["@types/auth0", "npm:2.34.14"],\
             ["@types/boom", "npm:7.3.1"],\
             ["@types/express", "npm:4.17.13"],\
             ["@types/morgan", "npm:1.9.3"],\
@@ -561,10 +561,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/auth0", [\
-        ["npm:2.34.13", {\
-          "packageLocation": "./.yarn/cache/@types-auth0-npm-2.34.13-626042f6bb-81b87b5584.zip/node_modules/@types/auth0/",\
+        ["npm:2.34.14", {\
+          "packageLocation": "./.yarn/cache/@types-auth0-npm-2.34.14-22d7593d8e-3b654e5d96.zip/node_modules/@types/auth0/",\
           "packageDependencies": [\
-            ["@types/auth0", "npm:2.34.13"]\
+            ["@types/auth0", "npm:2.34.14"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7677,7 +7677,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["$", "link:./src::locator=veritas%40workspace%3A."],\
             ["@commitlint/cli", "npm:16.2.3"],\
             ["@commitlint/config-conventional", "npm:16.2.1"],\
-            ["@types/auth0", "npm:2.34.13"],\
+            ["@types/auth0", "npm:2.34.14"],\
             ["@types/boom", "npm:7.3.1"],\
             ["@types/express", "npm:4.17.13"],\
             ["@types/morgan", "npm:1.9.3"],\
