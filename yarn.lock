@@ -415,10 +415,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/auth0@npm:^2.34.16":
-  version: 2.34.16
-  resolution: "@types/auth0@npm:2.34.16"
-  checksum: 789d8e19f4f4e043948ec3366ca378bf4c56a4df86d9fddf2ae924f5175b7587ea1049249daf8dec0c1a87aad05b2c55e6b6b7370705ef4e039ec17a79f5fe9e
+"@types/auth0@npm:^2.34.17":
+  version: 2.34.17
+  resolution: "@types/auth0@npm:2.34.17"
+  checksum: e6a8f181292bc9676fa89dc3a12dd24fc52654efb88be8edcabdb737421dc208aa1ca0016d2cb6c433232c93f1efe768f44fce5b034d894fdebc1d826997ac72
   languageName: node
   linkType: hard
 
@@ -6373,7 +6373,7 @@ __metadata:
     $: "link:./src"
     "@commitlint/cli": ^16.2.3
     "@commitlint/config-conventional": ^16.2.1
-    "@types/auth0": ^2.34.16
+    "@types/auth0": ^2.34.17
     "@types/boom": ^7.3.1
     "@types/express": ^4.17.13
     "@types/morgan": ^1.9.3
