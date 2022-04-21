@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:16.2.3"],\
             ["@commitlint/config-conventional", "npm:16.2.1"],\
             ["@types/auth0", "npm:2.34.19"],\
-            ["@types/boom", "npm:7.3.1"],\
+            ["@types/boom", "npm:7.3.2"],\
             ["@types/express", "npm:4.17.13"],\
             ["@types/morgan", "npm:1.9.3"],\
             ["@types/node", "npm:16.11.27"],\
@@ -581,10 +581,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/boom", [\
-        ["npm:7.3.1", {\
-          "packageLocation": "./.yarn/cache/@types-boom-npm-7.3.1-e2ec439e03-fc483602fb.zip/node_modules/@types/boom/",\
+        ["npm:7.3.2", {\
+          "packageLocation": "./.yarn/cache/@types-boom-npm-7.3.2-b59cf52330-b81c3645a8.zip/node_modules/@types/boom/",\
           "packageDependencies": [\
-            ["@types/boom", "npm:7.3.1"]\
+            ["@types/boom", "npm:7.3.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7731,7 +7731,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:16.2.3"],\
             ["@commitlint/config-conventional", "npm:16.2.1"],\
             ["@types/auth0", "npm:2.34.19"],\
-            ["@types/boom", "npm:7.3.1"],\
+            ["@types/boom", "npm:7.3.2"],\
             ["@types/express", "npm:4.17.13"],\
             ["@types/morgan", "npm:1.9.3"],\
             ["@types/node", "npm:16.11.27"],\
