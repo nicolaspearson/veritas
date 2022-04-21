@@ -432,10 +432,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/boom@npm:^7.3.1":
-  version: 7.3.1
-  resolution: "@types/boom@npm:7.3.1"
-  checksum: fc483602fb667d8858cef0a7685b9f25ce805d2e15ba033abf6e33da4ca1f103d69ec77e2d28d116d88a17a18f57c909358d99f9fbe3a9dd00c781190e877b7f
+"@types/boom@npm:^7.3.2":
+  version: 7.3.2
+  resolution: "@types/boom@npm:7.3.2"
+  checksum: b81c3645a815478163debc942a4bd0032f79b40715aaccf0efd965377c96c0f15b8700d79aabeca47b891a0270c678e63575b3eae2972ed6e12e4d932f50308c
   languageName: node
   linkType: hard
 
@@ -6371,7 +6371,7 @@ __metadata:
     "@commitlint/cli": ^16.2.3
     "@commitlint/config-conventional": ^16.2.1
     "@types/auth0": ^2.34.19
-    "@types/boom": ^7.3.1
+    "@types/boom": ^7.3.2
     "@types/express": ^4.17.13
     "@types/morgan": ^1.9.3
     "@types/node": ^16.11.27
