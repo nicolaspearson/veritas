@@ -66,7 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express", "npm:4.17.3"],\
             ["express-oauth2-jwt-bearer", "npm:1.1.0"],\
             ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.7.1"],\
-            ["husky", "npm:8.0.0"],\
+            ["husky", "npm:8.0.1"],\
             ["markdownlint-cli", "npm:0.31.1"],\
             ["morgan", "npm:1.10.0"],\
             ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"],\
@@ -4234,10 +4234,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["husky", [\
-        ["npm:8.0.0", {\
-          "packageLocation": "./.yarn/cache/husky-npm-8.0.0-1b3b519c6d-b6b842abdd.zip/node_modules/husky/",\
+        ["npm:8.0.1", {\
+          "packageLocation": "./.yarn/cache/husky-npm-8.0.1-85fede8470-943a73a13d.zip/node_modules/husky/",\
           "packageDependencies": [\
-            ["husky", "npm:8.0.0"]\
+            ["husky", "npm:8.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7775,7 +7775,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express", "npm:4.17.3"],\
             ["express-oauth2-jwt-bearer", "npm:1.1.0"],\
             ["express-openid-connect", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:2.7.1"],\
-            ["husky", "npm:8.0.0"],\
+            ["husky", "npm:8.0.1"],\
             ["markdownlint-cli", "npm:0.31.1"],\
             ["morgan", "npm:1.10.0"],\
             ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"],\
