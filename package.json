@@ -9,7 +9,7 @@
   "author": "Nicolas Pearson",
   "license": "MIT",
   "engines": {
-    "node": ">=v16.14.2"
+    "node": ">=v16.15.1"
   },
   "main": "src/index.ts",
   "scripts": {
@@ -70,7 +70,7 @@
     "@types/boom": "^7.3.2",
     "@types/express": "^4.17.13",
     "@types/morgan": "^1.9.3",
-    "@types/node": "^16.11.30",
+    "@types/node": "^16.11.39",
     "@types/webpack-env": "^1.16.4",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
