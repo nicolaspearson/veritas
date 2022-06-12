@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/boom", "npm:7.3.2"],\
             ["@types/express", "npm:4.17.13"],\
             ["@types/morgan", "npm:1.9.3"],\
-            ["@types/node", "npm:16.11.30"],\
+            ["@types/node", "npm:16.11.39"],\
             ["@types/webpack-env", "npm:1.16.4"],\
             ["@typescript-eslint/eslint-plugin", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:5.23.0"],\
             ["@typescript-eslint/parser", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:5.23.0"],\
@@ -762,10 +762,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:16.11.30", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.30-de3d3fe823-2195096506.zip/node_modules/@types/node/",\
+        ["npm:16.11.39", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.39-afb6348701-bc97b9773a.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:16.11.30"]\
+            ["@types/node", "npm:16.11.39"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -7322,7 +7322,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],\
             ["@tsconfig/node14", "npm:1.0.1"],\
             ["@tsconfig/node16", "npm:1.0.2"],\
-            ["@types/node", "npm:16.11.30"],\
+            ["@types/node", "npm:16.11.39"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
@@ -7740,7 +7740,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/boom", "npm:7.3.2"],\
             ["@types/express", "npm:4.17.13"],\
             ["@types/morgan", "npm:1.9.3"],\
-            ["@types/node", "npm:16.11.30"],\
+            ["@types/node", "npm:16.11.39"],\
             ["@types/webpack-env", "npm:1.16.4"],\
             ["@typescript-eslint/eslint-plugin", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:5.23.0"],\
             ["@typescript-eslint/parser", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:5.23.0"],\
