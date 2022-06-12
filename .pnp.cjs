@@ -50,7 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["class-transformer-validator", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:0.9.1"],\
             ["class-validator", "npm:0.13.2"],\
             ["dotenv", "npm:16.0.1"],\
-            ["ejs", "npm:3.1.7"],\
+            ["ejs", "npm:3.1.8"],\
             ["eslint", "npm:8.17.0"],\
             ["eslint-config-prettier", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.5.0"],\
             ["eslint-import-resolver-node", "npm:0.3.6"],\
@@ -2773,10 +2773,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["ejs", [\
-        ["npm:3.1.7", {\
-          "packageLocation": "./.yarn/cache/ejs-npm-3.1.7-ac170c215c-fe40764af3.zip/node_modules/ejs/",\
+        ["npm:3.1.8", {\
+          "packageLocation": "./.yarn/cache/ejs-npm-3.1.8-30583753fc-1d40d198ad.zip/node_modules/ejs/",\
           "packageDependencies": [\
-            ["ejs", "npm:3.1.7"],\
+            ["ejs", "npm:3.1.8"],\
             ["jake", "npm:10.8.5"]\
           ],\
           "linkType": "HARD"\
@@ -7837,7 +7837,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["class-transformer-validator", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:0.9.1"],\
             ["class-validator", "npm:0.13.2"],\
             ["dotenv", "npm:16.0.1"],\
-            ["ejs", "npm:3.1.7"],\
+            ["ejs", "npm:3.1.8"],\
             ["eslint", "npm:8.17.0"],\
             ["eslint-config-prettier", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.5.0"],\
             ["eslint-import-resolver-node", "npm:0.3.6"],\
