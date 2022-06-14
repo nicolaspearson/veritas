@@ -71,7 +71,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["morgan", "npm:1.10.0"],\
             ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"],\
             ["pinst", "npm:3.0.0"],\
-            ["prettier", "npm:2.6.2"],\
+            ["prettier", "npm:2.7.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rimraf", "npm:3.0.2"],\
             ["run-script-webpack-plugin", "npm:0.0.14"],\
@@ -3264,7 +3264,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", null],\
             ["eslint", "npm:8.17.0"],\
             ["eslint-config-prettier", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.5.0"],\
-            ["prettier", "npm:2.6.2"],\
+            ["prettier", "npm:2.7.0"],\
             ["prettier-linter-helpers", "npm:1.0.0"]\
           ],\
           "packagePeers": [\
@@ -6247,10 +6247,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prettier", [\
-        ["npm:2.6.2", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.6.2-05918420da-48d08dde8e.zip/node_modules/prettier/",\
+        ["npm:2.7.0", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.7.0-77c945e313-5b55bb1dce.zip/node_modules/prettier/",\
           "packageDependencies": [\
-            ["prettier", "npm:2.6.2"]\
+            ["prettier", "npm:2.7.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7846,7 +7846,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["morgan", "npm:1.10.0"],\
             ["pg", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:8.7.3"],\
             ["pinst", "npm:3.0.0"],\
-            ["prettier", "npm:2.6.2"],\
+            ["prettier", "npm:2.7.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rimraf", "npm:3.0.2"],\
             ["run-script-webpack-plugin", "npm:0.0.14"],\
