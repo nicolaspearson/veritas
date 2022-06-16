@@ -74,7 +74,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rimraf", "npm:3.0.2"],\
-            ["run-script-webpack-plugin", "npm:0.0.14"],\
+            ["run-script-webpack-plugin", "npm:0.1.0"],\
             ["ts-loader", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:9.3.0"],\
             ["ts-node", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:10.8.1"],\
             ["typeorm", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:0.2.45"],\
@@ -6647,10 +6647,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["run-script-webpack-plugin", [\
-        ["npm:0.0.14", {\
-          "packageLocation": "./.yarn/cache/run-script-webpack-plugin-npm-0.0.14-67c7c3360b-6290f7743b.zip/node_modules/run-script-webpack-plugin/",\
+        ["npm:0.1.0", {\
+          "packageLocation": "./.yarn/cache/run-script-webpack-plugin-npm-0.1.0-73a5d83f87-b1e78838b2.zip/node_modules/run-script-webpack-plugin/",\
           "packageDependencies": [\
-            ["run-script-webpack-plugin", "npm:0.0.14"]\
+            ["run-script-webpack-plugin", "npm:0.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7849,7 +7849,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rimraf", "npm:3.0.2"],\
-            ["run-script-webpack-plugin", "npm:0.0.14"],\
+            ["run-script-webpack-plugin", "npm:0.1.0"],\
             ["ts-loader", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:9.3.0"],\
             ["ts-node", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:10.8.1"],\
             ["typeorm", "virtual:ed1866de25a37a97cea4ab26e2bfba5e5ccd479028e6e0beca8918361895bc2fe5e71420d8f1f4636f9ca87320e36b0024084d5de98f197a9b58c101806b590f#npm:0.2.45"],\
