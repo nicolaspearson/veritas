@@ -85,7 +85,7 @@
     "eslint-plugin-ordered-imports": "^0.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-unicorn": "^42.0.0",
+    "eslint-plugin-unicorn": "^43.0.1",
     "husky": "^8.0.1",
     "markdownlint-cli": "^0.31.1",
     "pinst": "^3.0.0",
